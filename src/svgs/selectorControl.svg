@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="130.43257mm"
+   height="62.694218mm"
+   viewBox="0 0 130.43257 62.694217"
+   version="1.1"
+   id="svg903"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="selectorControl.svg">
+  <style
+     id="style1466">.selectedOption {  }
+</style>
+  <defs
+     id="defs897">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1482">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop1478" />
+      <stop
+         style="stop-color:#616161;stop-opacity:1"
+         offset="1"
+         id="stop1480" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1482"
+       id="linearGradient1488"
+       x1="129.35449"
+       y1="118.09583"
+       x2="156.82431"
+       y2="156.5983"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0003537,0,0,0.68448596,-0.03622606,21.297008)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.3029611"
+     inkscape:cx="208.76148"
+     inkscape:cy="205.31627"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1493"
+     inkscape:window-height="943"
+     inkscape:window-x="32"
+     inkscape:window-y="82"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata900">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-37.215261,-61.097734)">
+    <rect
+       style="fill:url(#linearGradient1488);fill-opacity:1;stroke:#ff9f00;stroke-width:1.119;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1476"
+       width="129.31357"
+       height="61.575218"
+       x="37.774761"
+       y="61.657234"
+       ry="3.67838" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.988304;stroke:#ffa209;stroke-width:0.264583;stroke-opacity:1"
+       x="49.52993"
+       y="86.740845"
+       id="text1470"
+       class="controlName"><tspan
+         sodipodi:role="line"
+         id="tspan1468"
+         x="49.52993"
+         y="86.740845"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.988304;stroke:#ffa209;stroke-width:0.264583;stroke-opacity:1">Control Name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.988304;stroke:#ffa209;stroke-width:0.264583;stroke-opacity:1"
+       x="62.75174"
+       y="104.56057"
+       id="text1474"
+       class="selectedOption"><tspan
+         sodipodi:role="line"
+         id="tspan1472"
+         x="62.75174"
+         y="104.56057"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:0.988304;stroke:#ffa209;stroke-width:0.264583;stroke-opacity:1">selected option</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="303.83826mm"
+   height="272.39227mm"
+   viewBox="0 0 303.83825 272.39227"
+   version="1.1"
+   id="svg3080"
+   sodipodi:docname="envelope.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <defs
+     id="defs3074">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4287-3">
+      <stop
+         style="stop-color:#777777;stop-opacity:1"
+         offset="0"
+         id="stop4283" />
+      <stop
+         style="stop-color:#c6c6c6;stop-opacity:0"
+         offset="1"
+         id="stop4285" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1482"
+       id="linearGradient1488"
+       x1="129.35449"
+       y1="118.09583"
+       x2="156.82431"
+       y2="156.5983"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.3228928,0,0,2.9883764,-96.952374,-142.42612)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1482">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop1478" />
+      <stop
+         style="stop-color:#616161;stop-opacity:1"
+         offset="1"
+         id="stop1480" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4287-3"
+       id="linearGradient4289"
+       x1="99.754929"
+       y1="156.12907"
+       x2="272.1456"
+       y2="220.74081"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4287-3"
+       id="linearGradient4325"
+       gradientUnits="userSpaceOnUse"
+       x1="99.754929"
+       y1="156.12907"
+       x2="272.1456"
+       y2="220.74081"
+       gradientTransform="matrix(0.72755602,0,0,1.0079694,-123.37464,59.635461)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4287-3"
+       id="linearGradient1017"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.72755602,0,0,1.0079694,-123.37464,59.635461)"
+       x1="99.754929"
+       y1="156.12907"
+       x2="272.1456"
+       y2="220.74081" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4287-3"
+       id="linearGradient1041"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.72755602,0,0,1.0079694,-123.37464,59.635461)"
+       x1="99.754929"
+       y1="156.12907"
+       x2="272.1456"
+       y2="220.74081" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4287-3"
+       id="linearGradient1065"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.72755602,0,0,1.0079694,-123.37464,59.635461)"
+       x1="47.80344"
+       y1="115.63039"
+       x2="272.1456"
+       y2="220.74081" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400.55293"
+     inkscape:cy="720.57815"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="943"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4251"
+       originx="10.934007"
+       originy="-31.999921" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3077">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(10.934007,-31.999922)">
+    <rect
+       style="fill:url(#linearGradient1488);fill-opacity:1;stroke:#ff9f00;stroke-width:3.5629;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1476"
+       width="300.27536"
+       height="268.82938"
+       x="-9.1525574"
+       y="33.781372"
+       ry="16.059328" />
+    <g
+       id="g979"
+       class="attack">
+      <rect
+         style="fill:url(#linearGradient4325);fill-opacity:1;stroke:#ff9f00;stroke-width:1.93743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1476-4-3"
+         width="65.751099"
+         height="41.102013"
+         x="8.8754272"
+         y="241.03342"
+         ry="7.4169207" />
+      <text
+         xml:space="preserve"
+         style="font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';fill:#fefefe;fill-opacity:1;stroke:#c97f05;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="16.435394"
+         y="265.48438"
+         id="text4330"><tspan
+           sodipodi:role="line"
+           id="tspan4328"
+           x="16.435394"
+           y="265.48438"
+           style="fill:#fefefe;fill-opacity:1;stroke:#c97f05;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Attack</tspan></text>
+    </g>
+    <g
+       id="g979-7"
+       transform="translate(65.751099)"
+       class="decay">
+      <rect
+         style="fill:url(#linearGradient1017);fill-opacity:1;stroke:#ff9f00;stroke-width:1.93743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1476-4-3-1"
+         width="65.751099"
+         height="41.102013"
+         x="8.8754272"
+         y="241.03342"
+         ry="7.4169207" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fefefe;fill-opacity:1;stroke:#c97f05;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="19.409136"
+         y="265.48438"
+         id="text4330-4"><tspan
+           sodipodi:role="line"
+           id="tspan1071"
+           x="19.409136"
+           y="265.48438">Decay</tspan></text>
+    </g>
+    <g
+       id="g979-1"
+       transform="translate(131.5022)"
+       class="sustain">
+      <rect
+         style="fill:url(#linearGradient1041);fill-opacity:1;stroke:#ff9f00;stroke-width:1.93743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1476-4-3-4"
+         width="65.751099"
+         height="41.102013"
+         x="8.8754272"
+         y="241.03342"
+         ry="7.4169207" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fefefe;fill-opacity:1;stroke:#c97f05;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="13.412951"
+         y="265.48438"
+         id="text4330-3"><tspan
+           sodipodi:role="line"
+           id="tspan1073"
+           x="13.412951"
+           y="265.48438">Sustain</tspan></text>
+    </g>
+    <g
+       id="g979-0"
+       transform="translate(197.2533)"
+       class="release">
+      <rect
+         style="fill:url(#linearGradient1065);fill-opacity:1;stroke:#ff9f00;stroke-width:1.93743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1476-4-3-18"
+         width="65.751099"
+         height="41.102013"
+         x="8.8754272"
+         y="241.03342"
+         ry="7.4169207" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fefefe;fill-opacity:1;stroke:#c97f05;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="11.09339"
+         y="265.48438"
+         id="text4330-7"><tspan
+           sodipodi:role="line"
+           id="tspan1075"
+           x="11.09339"
+           y="265.48438">Release</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke:#ff9f00;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="8.8670492"
+       y="72.218361"
+       id="text2240"
+       class="controlName"><tspan
+         sodipodi:role="line"
+         id="tspan2238"
+         x="8.8670492"
+         y="72.218361"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke:#ff9f00;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Control Name</tspan></text>
+    <g
+       id="g1870">
+      <rect
+         style="fill:url(#linearGradient4289);fill-opacity:1;stroke:#ff9f00;stroke-width:2.262;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1476-4"
+         width="264.24161"
+         height="123.17586"
+         x="7.9039869"
+         y="97.564957"
+         ry="7.3582792"
+         class="pathAxes" />
+      <path
+         style="fill:none;stroke:#ff9f00;stroke-width:1.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 23.839802,214.18444 34.017857,-99.78571 40.065475,50.64881 H 221.14337 l 32.50595,49.1369"
+         id="path1866"
+         class="envelopePath" />
+    </g>
+  </g>
+</svg>
