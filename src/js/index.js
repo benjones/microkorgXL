@@ -10,7 +10,7 @@ import Axes from '../svgs/axes.svg'
 const imageToUseMap = {
     "selectorControl.svg": SelectorControl,
     "sliderControl.svg": SliderControl,
-    "envelope.svg" : EnvelopeControl
+    "envelope.svg": EnvelopeControl
 };
 
 window.onload = function () {
@@ -245,8 +245,15 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#envelope1")),
                 {
                     name: "Envelope 1",
-                    ccNumbers: []
+                    ccNumbers: { attack: 85, decay: 86, sustain: 87, release: 88 }
                 }),
+            env2: new EnvelopeWidget(
+                imageToUse(this.svg.querySelector("#envelope2")),
+                {
+                    name: "Envelope 2",
+                    ccNumbers: { attack: 73, decay: 75, sustain: 70, release: 72 }
+                }),
+
 
         };
 
@@ -289,9 +296,9 @@ class uiHandle {
         console.log(programName);
         console.log(this.svg.querySelector("#patchName"));
         this.svg.querySelector("#patchName").textContent = programName;
-        /*for (let i = 12; i < 80; i++) {
+        for (let i = 12; i < 80; i++) {
             console.log(i, getByte(i));
-        }*/
+        }
         /*
         Analog tune: 124?  121
         Pitch bend: 125 or 126
@@ -339,6 +346,17 @@ class uiHandle {
         this.controls.filter1EnvIntensity.setFromSysex(getByte(48));
         this.controls.filter1KeyTrack.setFromSysex(getByte(49));
         this.controls.filter1VelSen.setFromSysex(getByte(50));
+
+        //eg1
+        this.controls.env1.setFromSysex({
+            attack: getByte(64), decay: getByte(65),
+            sustain: getByte(66), release: getByte(67)
+        });
+        //eg2
+        this.controls.env2.setFromSysex({
+            attack: getByte(70), decay: getByte(71),
+            sustain: getByte(72), release: getByte(73)
+        });
     }
 }
 
@@ -354,8 +372,8 @@ function imageToUse(imageNode) {
     console.log(imageNode);
     console.log(scElement);
 
-    let axesFrag = document.createRange().createContextualFragment(Axes);
-    scElement.appendChild(axesFrag.firstElementChild);
+    //let axesFrag = document.createRange().createContextualFragment(Axes);
+    //scElement.appendChild(axesFrag.firstElementChild);
 
     let toCopy = ["x", "y", "width", "height", "id"];
     for (let attr of toCopy) {
@@ -484,27 +502,97 @@ class EnvelopeWidget {
         this.ccNumbers = options.ccNumbers;
         this.svgNode.querySelector(".controlName").textContent = this.name;
 
-        let envPath = this.svgNode.querySelector(".envelopePath");
-        let pathData = envPath.getPathData();
+        this.envPath = this.svgNode.querySelector(".envelopePath");
+        let pathData = this.envPath.getPathData();
         console.log(pathData);
-        console.log(envPath.getAttribute("d"));
-        let axes = this.svgNode.querySelector(".pathAxes");
-        console.log(axes);
-        
-        pathData[0].values[1] = -10;
-         pathData[0].values[1] = 40;
+        console.log(this.envPath.getAttribute("d"));
+        this.axes = this.svgNode.querySelector(".pathAxes");
+        console.log(this.axes);
+        console.log(this.axes.height.animVal);
+
+        //todo, should probably just erase, and start fresh on the
+        //path data to be less fragile...
+        this.borderFudge = 10;
+        this.xMin = this.axes.x.animVal.value + this.borderFudge;
+        this.xMax = this.xMin + this.axes.width.animVal.value - 2 * this.borderFudge;
+        this.yBot = this.axes.y.animVal.value + this.axes.height.animVal.value - this.borderFudge;
+        this.yTop = this.axes.y.animVal.value + this.borderFudge;
+        pathData[0].values[0] = this.xMin;
+        pathData[0].values[1] = this.yBot;
+
+        const last = pathData.length - 1;
+        pathData[last].values[0] = this.xMax;
+        pathData[last].values[1] = this.yBot;
+        pathData[last].type = "L";
+
+        pathData[1].values[1] = this.yTop; //attack hits the peak
+
         console.log(pathData);
-        envPath.setPathData(pathData);
-        console.log(envPath.getAttribute("d"));
+        this.envPath.setPathData(pathData);
+        console.log(this.envPath.getAttribute("d"));
 
     }
 
+    connectCallbacks(midiOut) {
+        let callback = (field) => {
+            return (e) => {
+                e.preventDefault();
+                this[field] = Math.round(this[field] + e.deltaY);
+                this[field] = Math.min(127, this[field]);
+                this[field] = Math.max(0, this[field]);
 
-}
+                midiOut.sendControlChange(this.ccNumbers[field], this[field]);
+                this.updatePath();
+            }
+        }
 
-function pathToPoints(path){
-    console.log(typeof(string(path)));
-    let points = path.split(' ');
-    points.shift(); //drop the m;
-    console.log(points.map( (x) => x.split(",")));
+        this.svgNode.querySelector(".attack").addEventListener('wheel',
+            callback("attack"));
+        this.svgNode.querySelector(".decay").addEventListener('wheel',
+            callback("decay"));
+        this.svgNode.querySelector(".sustain").addEventListener('wheel',
+            callback("sustain"));
+        this.svgNode.querySelector(".release").addEventListener('wheel',
+            callback("release"));
+
+    }
+    setFromSysex(vals) {
+        this.attack = vals.attack;
+        this.decay = vals.decay;
+        this.sustain = vals.sustain;
+        this.release = vals.release;
+
+        this.updatePath();
+    }
+
+    updatePath() {
+        let pathData = this.envPath.getPathData();
+
+        const usableWidth = this.xMax - this.xMin;
+        const usableHeight = this.yBot - this.yTop;
+        let attackX = this.xMin + this.attack * usableWidth / 512;
+        //use up to 1/4 for attck, up to 1/4 for decay, up to 1/4 for release, rest for sustain
+        let sustainX = attackX + this.decay * usableWidth / 512;
+        let releaseStartX = this.xMax - this.release * usableWidth / 512;
+
+        let sustainY = this.yBot - usableHeight * this.sustain / 128;
+
+        //top of attack
+        pathData[1].values[0] = attackX;
+        pathData[1].values[1] = this.yTop;
+        pathData[1].type = "L";
+
+        //begin of sustain
+        pathData[2].values[0] = sustainX;
+        pathData[2].values[1] = sustainY;
+        pathData[2].type = "L";
+
+        //end of sustain
+        pathData[3].values[0] = releaseStartX;
+        pathData[3].values[1] = sustainY;
+        pathData[3].type = "L";
+
+        this.envPath.setPathData(pathData);
+    }
+
 }
