@@ -1,119 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="81.745033mm"
-   height="186.55022mm"
-   viewBox="0 0 81.745033 186.55022"
-   version="1.1"
-   id="svg8"
-   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="sliderControl.svg">
-  <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient2746">
-      <stop
-         style="stop-color:#000000;stop-opacity:1"
-         offset="0"
-         id="stop2742" />
-      <stop
-         style="stop-color:#616161;stop-opacity:1"
-         offset="1"
-         id="stop2744" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="186.55022mm" id="svg8" inkscape:version="1.0.2 (e86c8708, 2021-01-15)" sodipodi:docname="sliderControl.svg" version="1.1" viewBox="0 0 81.745033 186.55022" width="81.745033mm" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs2">
+    <linearGradient id="linearGradient2746" inkscape:collect="always">
+      <stop id="stop2742" offset="0" style="stop-color:#000000;stop-opacity:1" />
+      <stop id="stop2744" offset="1" style="stop-color:#616161;stop-opacity:1" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2746"
-       id="linearGradient2748"
-       x1="92.84964"
-       y1="143.25298"
-       x2="136.82738"
-       y2="237.36905"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0308319,0,0,1.1553781,-1.8123506,-36.910892)" />
+    <linearGradient gradientTransform="matrix(1.0308319,0,0,1.1553781,-1.8123506,-36.910892)" gradientUnits="userSpaceOnUse" id="linearGradient2748" inkscape:collect="always" x1="92.84964" x2="136.82738" xlink:href="#linearGradient2746" y1="143.25298" y2="237.36905" />
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.86918226"
-     inkscape:cx="362.25687"
-     inkscape:cy="317.49372"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1496"
-     inkscape:window-height="943"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0" />
-  <metadata
-     id="metadata5">
+  <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="362.25687" inkscape:cy="317.49372" inkscape:document-rotation="0" inkscape:document-units="mm" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="943" inkscape:window-maximized="0" inkscape:window-width="1496" inkscape:window-x="0" inkscape:window-y="25" inkscape:zoom="0.86918226" pagecolor="#ffffff" showgrid="false" />
+  <metadata id="metadata5">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-58.618902,-51.920145)">
-    <rect
-       style="fill:url(#linearGradient2748);fill-opacity:1;stroke:#ff9f00;stroke-width:2.26054;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2740"
-       width="79.484497"
-       height="184.28967"
-       x="59.749172"
-       y="53.050415"
-       ry="10.274899"
-       rx="0" />
-    <rect
-       style="fill:#616161;fill-opacity:1;stroke:none;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2750"
-       width="11.871791"
-       height="148.85399"
-       x="93.555527"
-       y="84.928963"
-       ry="5.9358954"
-       class="sliderRail" />
-    <rect
-       style="fill:#ff9f00;fill-opacity:1;stroke:none;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2752"
-       width="59.05455"
-       height="6.6969075"
-       x="69.964142"
-       y="155.85532"
-       ry="0"
-       class="slider" />
-    <text
-       xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.476;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="79.650047"
-       y="69.404312"
-       id="text2756"
-       class="controlName"><tspan
-         sodipodi:role="line"
-         id="tspan2754"
-         x="79.650047"
-         y="69.404312"
-         style="fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.476;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Name</tspan></text>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+    <rect height="184.28967" id="rect2740" rx="0" ry="10.274899" style="fill:url(#linearGradient2748);fill-opacity:1;stroke:#ff9f00;stroke-width:2.26054;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="79.484497" x="1.13027" y="1.13027" />
+    <rect class="sliderRail" height="148.85399" id="rect2750" ry="5.9358954" style="fill:#616161;fill-opacity:1;stroke:none;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="11.871791" x="34.9366" y="33.0088" />
+    <rect class="slider" height="6.6969075" id="rect2752" ry="0" style="fill:#ff9f00;fill-opacity:1;stroke:none;stroke-width:2.11667;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="59.05455" x="11.3452" y="103.935" />
+    <text class="controlName" id="text2756" style="font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.476;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" x="21.0311" xml:space="preserve" y="17.4842"><tspan id="tspan2754" sodipodi:role="line" style="fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.476;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" x="21.0311" y="17.4842">Name</tspan></text>
   </g>
 </svg>
