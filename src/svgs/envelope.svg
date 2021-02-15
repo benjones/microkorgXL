@@ -13,8 +13,8 @@
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
    sodipodi:docname="envelope.svg"
    version="1.1"
-   viewBox="0 0 303.83825 272.39227"
-   width="303.83826mm">
+   viewBox="0 0 349.95135 272.39227"
+   width="349.95135mm">
   <defs
      id="defs3074">
     <linearGradient
@@ -30,7 +30,7 @@
          style="stop-color:#c6c6c6;stop-opacity:0" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(2.3228928,0,0,2.9883764,-96.952374,-142.42612)"
+       gradientTransform="matrix(2.6776027,0,0,2.9854804,-111.89895,-142.15611)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient1488"
        inkscape:collect="always"
@@ -105,14 +105,14 @@
      bordercolor="#666666"
      borderopacity="1.0"
      id="base"
-     inkscape:current-layer="g1870"
-     inkscape:cx="400.55293"
-     inkscape:cy="720.57815"
+     inkscape:current-layer="layer1"
+     inkscape:cx="537.69579"
+     inkscape:cy="749.14958"
      inkscape:document-rotation="0"
      inkscape:document-units="mm"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:window-height="943"
+     inkscape:window-height="859"
      inkscape:window-maximized="0"
      inkscape:window-width="1252"
      inkscape:window-x="0"
@@ -122,7 +122,7 @@
      showgrid="false">
     <inkscape:grid
        id="grid4251"
-       originx="10.934006"
+       originx="10.934008"
        originy="-31.999919"
        type="xygrid" />
   </sodipodi:namedview>
@@ -143,13 +143,13 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <rect
-       height="268.82938"
+       height="268.56885"
        id="rect1476"
-       ry="16.059328"
-       style="fill:url(#linearGradient1488);fill-opacity:1;stroke:#ff9f00;stroke-width:3.5629;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       width="300.27536"
-       x="1.78145"
-       y="1.78145" />
+       ry="16.043766"
+       style="fill:url(#linearGradient1488);fill-opacity:1;stroke:#ff9f00;stroke-width:3.82342;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="346.12793"
+       x="1.9117081"
+       y="1.9117081" />
     <g
        class="attack"
        id="g979"
@@ -264,13 +264,20 @@
          ry="7.3582792"
          style="fill:url(#linearGradient4289);fill-opacity:1;stroke:#ff9f00;stroke-width:2.262;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          width="264.24161"
-         x="18.838"
-         y="65.565" />
+         x="18.837999"
+         y="65.565002" />
       <path
          class="envelopePath"
          d="M 35.179088,176.38682 69.196945,76.601111 109.26242,127.24992 h 123.22024 l 32.50595,49.1369"
          id="path1866"
          style="fill:none;stroke:#ff9f00;stroke-width:1.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <circle
+       style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:2.365;stroke-linejoin:round"
+       id="path1860"
+       cx="321.27975"
+       cy="131.53572"
+       r="17.198875"
+       class="patchJack" />
   </g>
 </svg>

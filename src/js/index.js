@@ -13,9 +13,18 @@ const imageToUseMap = {
     "envelope.svg": EnvelopeControl
 };
 
+const disabledJackColor = "#444444";
+
+const patchColors = {
+    "filterCutoff": "#ff0000",
+    "ampLevel": "#0000ff",
+}
+
+
 window.onload = function () {
     console.log("document loaded");
     let ui = new uiHandle(document.getElementById("theSVG"));
+
     WebMidi.enable(function (err) {
         if (err) {
             console.log("WebMidi could not be enabled.", err);
@@ -78,13 +87,12 @@ window.onload = function () {
 class uiHandle {
     constructor(svg) {
         this.svg = svg.contentDocument;
-        console.log(this.svg);
-        console.log(this.svg.querySelector("#osc1waveform"));
 
+        this.patches = [];
 
         this.controls = {
             osc1Wave: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc1waveform")),
+                imageToUse(this.svg.querySelector("#osc1Waveform")),
                 {
                     name: "Osc 1 Waveform",
                     ccNumber: 8,
@@ -110,7 +118,20 @@ class uiHandle {
                         new SelectorControlOption("Cross", 1, 32),
                         new SelectorControlOption("Unison", 2, 64),
                         new SelectorControlOption("VPM", 3, 96),
-                    ]
+                    ],
+                    onChange: function(){
+                        console.log("osc1mod onchange");
+                        let arrow = document.getElementById("theSVG").contentDocument.querySelector("#crossModArrow");
+                        let currentText = this.values[this.selectedOption].displayText
+                        console.log(currentText);
+                        if(currentText == "Cross"){
+                            console.log("setting visible");
+                            arrow.style.visibility = "visible";
+                        } else {
+                            console.log("setting hidden");
+                            arrow.style.visibility = "hidden";
+                        }
+                    }
                 }),
             osc1Control1: new SliderControlWidget(
                 imageToUse(this.svg.querySelector("#osc1Control1")),
@@ -125,7 +146,7 @@ class uiHandle {
                     ccNumber: 17,
                 }),
             osc2Wave: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc2waveform")),
+                imageToUse(this.svg.querySelector("#osc2Waveform")),
                 {
                     name: "Osc 2 Waveform",
                     ccNumber: 18,
@@ -138,7 +159,7 @@ class uiHandle {
 
                 }),
             osc2Mod: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc2mod")),
+                imageToUse(this.svg.querySelector("#osc2Mod")),
                 {
                     name: "Osc 2 Mod",
                     ccNumber: 19,
@@ -147,7 +168,19 @@ class uiHandle {
                         new SelectorControlOption("Ring", 1, 32),
                         new SelectorControlOption("Sync", 2, 64),
                         new SelectorControlOption("Ring Sync", 3, 96),
-                    ]
+                    ],
+                    onChange: function(){
+                        console.log("osc2mod onchange");
+                        let arrowGroup = document.getElementById("theSVG").contentDocument.querySelector("#osc2ModArrow");
+                        let currentText = this.values[this.selectedOption].displayText
+                        console.log(currentText);
+                        if(currentText == "Off"){
+                            arrowGroup.style.visibility = "hidden";
+                        } else {
+                            arrowGroup.style.visibility = "visible";
+                            arrowGroup.querySelector("#osc2ModLabel").textContent = currentText;
+                        }
+                    }
                 }),
             osc2Control1: new SliderControlWidget(
                 imageToUse(this.svg.querySelector("#osc2Control1")),
@@ -189,6 +222,12 @@ class uiHandle {
                         midiOut.sendSysex(0x42, toSend);
                     }
                 }),
+            ampLevel: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#ampLevel")),
+                {
+                    name: "Level",
+                    ccNumber: 7
+                }),
             filter1Cutoff: new SliderControlWidget(
                 imageToUse(this.svg.querySelector("#filter1Cutoff")),
                 {
@@ -217,7 +256,17 @@ class uiHandle {
                         new SelectorControlOption("Serial", 1, 32),
                         new SelectorControlOption("Parallel", 2, 64),
                         new SelectorControlOption("Indivual", 3, 96),
-                    ]
+                    ],
+                    onChange: function(){
+                        console.log("filterRouting onchange");
+                        let filterElements = ["#filterRoutingSingle", "#filterRoutingSerial", "#filterRoutingParallel", "#filterRoutingIndividual"]
+                            .map( id => document.getElementById("theSVG").contentDocument.querySelector(id));
+                        console.log(filterElements);
+                        console.log(this.selectedOption); 
+                        for(let i = 0; i < 4; i++ ){
+                            filterElements[i].style.visibility = (i == this.selectedOption) ? "visible" : "hidden";
+                        }
+                    }
                 }),
             filter1EnvIntensity: new SliderControlWidget(
                 imageToUse(this.svg.querySelector("#filter1EnvIntensity")),
@@ -347,6 +396,9 @@ class uiHandle {
         this.controls.filter1KeyTrack.setFromSysex(getByte(49));
         this.controls.filter1VelSen.setFromSysex(getByte(50));
 
+        //amp
+        this.controls.ampLevel.setFromSysex(getByte(56));
+
         //eg1
         this.controls.env1.setFromSysex({
             attack: getByte(64), decay: getByte(65),
@@ -357,30 +409,86 @@ class uiHandle {
             attack: getByte(70), decay: getByte(71),
             sustain: getByte(72), release: getByte(73)
         });
+
+        this.addPatch([this.controls.env1.jack, this.controls.filter1Cutoff.jack
+            /*, this.controls.filter2Cutoff.*/], patchColors.filterCutoff);
+        this.addPatch([this.controls.env2.jack, this.controls.ampLevel.jack
+        ], patchColors.ampLevel);
+    }
+
+    addPatch(jacks, color) {
+        this.patches.push({ jacks: jacks, color: color });
+        for (let jack of jacks) {
+            jack.style.fill = color;
+        }
+    }
+
+    //remove all patches that contain this jack, set all to gray
+    removePatch(jack) {
+        for (let patch of this.patches) {
+            for (let j of jacks) {
+                if (j == jack) {
+                    for (let aj of jacks) {
+                        aj.style.fill = disabledJackColor;
+                    }
+                    continue;
+                }
+            }
+        }
+        this.patches = this.patches.filter(patch => !patch.jacks.includes(jack));
+    }
+
+    removeAllPatches(jack) {
+        for (let patch of this.patches) {
+            for (let jack of patch.jacks) {
+                jack.style.fill = disabledJackColor;
+            }
+        }
+        this.patches = [];
     }
 }
 
 //Inkscape apparently won't make a <use> reference for me, but uses an <image> element as a link
 //This function replaces the <image> with a <use> element
 function imageToUse(imageNode) {
-    console.log("converting: imageNode");
-    console.log(imageNode);
-    console.log(imageNode.getAttribute("xlink:href"));
+    //console.log("converting: imageNode");
+    //console.log(imageNode);
+    //console.log(imageNode.getAttribute("xlink:href"));
     let src = imageToUseMap[imageNode.getAttribute("xlink:href")];
     let scFrag = document.createRange().createContextualFragment(src);
     let scElement = scFrag.firstElementChild;
-    console.log(imageNode);
-    console.log(scElement);
+    //console.log(imageNode);
+    //console.log(scElement.querySelectorAll("linearGradient"));
 
     //let axesFrag = document.createRange().createContextualFragment(Axes);
     //scElement.appendChild(axesFrag.firstElementChild);
 
     let toCopy = ["x", "y", "width", "height", "id"];
     for (let attr of toCopy) {
-        console.log("original attribute: ", attr);
-        console.log(imageNode.getAttributeNS(null, attr));
+        //console.log("original attribute: ", attr);
+        //console.log(imageNode.getAttributeNS(null, attr));
         scElement.setAttribute(attr, imageNode.getAttributeNS(null, attr));
     }
+    //nevermind, just don't use gradients
+    // //translate all the linear gradient elements
+    // const imX = Number(imageNode.getAttributeNS(null, "x"));
+    // const imY = Number(imageNode.getAttributeNS(null, "y"));
+    // for (let lg of scElement.querySelectorAll("linearGradient")) {
+    //     if (lg.hasAttributeNS(null, "x1")) {
+    //         console.log(lg);
+    //         let oldX1 = Number(lg.getAttributeNS(null, "x1"));
+    //         let oldY1 = Number(lg.getAttributeNS(null, "y1"));
+    //         let oldX2 = Number(lg.getAttributeNS(null, "x2"));
+    //         let oldY2 = Number(lg.getAttributeNS(null, "y2"));
+    //         console.log("oldX, y", oldX1, oldY1, oldX1 + imX);
+    //         lg.setAttribute("x1", imX + oldX1);
+    //         lg.setAttribute("y1", imY + oldY1);
+    //         lg.setAttribute("x2", imX + oldX2);
+    //         lg.setAttribute("y2", imY + oldY2);
+    //         console.log(lg.getAttribute("x1"), lg.getAttribute("y1"));
+    //     }
+    // }
+
 
     let parent = imageNode.parentNode;
     imageNode.remove();
@@ -416,6 +524,9 @@ class SelectorControlWidget {
         this.name = options.name;
         this.ccNumber = options.ccNumber;
         this.values = options.values; //
+        if ("onChange" in options) {
+            this.onChange = options.onChange;
+        }
         this.svgNode.querySelector(".controlName").textContent = this.name;
         this.selectedOption = -1;
     }
@@ -431,6 +542,9 @@ class SelectorControlWidget {
                     this.values[this.selectedOption].displayText;
                 midiOut.sendControlChange(this.ccNumber,
                     this.values[this.selectedOption].controlChangeValue);
+                if (this.onChange) {
+                    this.onChange.call(this);
+                }
             });
     }
 
@@ -438,6 +552,9 @@ class SelectorControlWidget {
         this.selectedOption = this.values.findIndex(x => x.sysexValue == val);
         this.svgNode.querySelector(".selectedOption").textContent =
             this.values[this.selectedOption].displayText;
+        if (this.onChange) {
+            this.onChange.call(this);
+        }
     }
 }
 
@@ -461,6 +578,11 @@ class SliderControlWidget {
         else
             this.sysexFunc = options.sysexFunc
         this.svgNode.querySelector(".controlName").textContent = this.name;
+
+        this.jack = this.svgNode.querySelector(".patchJack");
+        console.log(this.jack, this.jack.fill);
+        this.jack.style.fill = disabledJackColor;
+        console.log(this.jack.fill);
     }
 
     connectCallbacks(midiOut) {
@@ -471,7 +593,7 @@ class SliderControlWidget {
                 this.value = Math.min(127, this.value);
                 this.value = Math.max(0, this.value);
                 this.positionSlider(this.value);
-                console.log(this);
+          
                 if ('ccNumber' in this) {
                     midiOut.sendControlChange(this.ccNumber, this.value);
                 } else {
@@ -530,6 +652,11 @@ class EnvelopeWidget {
         console.log(pathData);
         this.envPath.setPathData(pathData);
         console.log(this.envPath.getAttribute("d"));
+
+        this.jack = this.svgNode.querySelector(".patchJack");
+        console.log(this.jack);
+        this.jack.style.fill = disabledJackColor;
+        console.log(this.jack);
 
     }
 

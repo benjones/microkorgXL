@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1788.5713"
-   height="925.71429"
-   viewBox="0 0 473.22615 244.92857"
+   width="1965.5848"
+   height="1017.3314"
+   viewBox="0 0 520.06098 269.16893"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
@@ -19,6 +19,174 @@
      id="style845" />
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker18513"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path18511" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker17977"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path17975" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path13284" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker14215"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14213" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker14028"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14026" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13968"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13966" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13824"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13822" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13778"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13776" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#5cff00;fill-opacity:1;fill-rule:evenodd;stroke:#5cff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13302" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13698"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#5cff00;fill-opacity:1;fill-rule:evenodd;stroke:#5cff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13696" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#5cff00;fill-opacity:1;fill-rule:evenodd;stroke:#5cff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13296" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#5cff00;fill-opacity:1;fill-rule:evenodd;stroke:#5cff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13290" />
+    </marker>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient843">
@@ -40,7 +208,235 @@
        y1="192.76785"
        x2="431.64877"
        y2="246.44048"
-       gradientTransform="translate(1.4783203e-6)" />
+       gradientTransform="matrix(1.0989691,0,0,1.0989691,-2.0200291,-2.0200311)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient7466"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.62443646,0,0,1.2340834,32.586734,-27.64133)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient8690"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.62443646,0,0,0.23716811,32.976551,218.30063)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient8922"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.62443646,0,0,1.2340834,32.586734,-27.64133)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient9757"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95312888,0,0,1.2268329,112.22104,-20.206571)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient10839"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95312888,0,0,1.2268329,112.22104,-20.206571)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient11363"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95312888,0,0,1.2268329,222.6466,-13.874653)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient15328"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.51665009,0,0,1.2368781,264.9447,-19.469895)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <marker
+       style="overflow:visible"
+       id="marker14215-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14213-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker14215-1-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path14213-8-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13968-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13966-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker17977-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path17975-0" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient18970"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.93228567,0,0,4.9437569,362.91701,-511.21149)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient19355"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.82329499,0,0,0.2352011,-2.8688812,218.56602)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient19399"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.86059724,0,0,0.23486145,12.219937,218.61183)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient19443"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.62443646,0,0,0.23716811,128.73721,241.24634)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient19469"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78185346,0,0,0.2355882,172.26371,241.4595)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient843"
+       id="linearGradient19867"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95312888,0,0,1.2268329,222.6466,-13.874653)"
+       x1="148.25356"
+       y1="128.14584"
+       x2="174.49944"
+       y2="153.12177" />
+    <marker
+       style="overflow:visible"
+       id="marker13824-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13822-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13778-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path13776-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker18513-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path18511-8" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -49,24 +445,25 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.4809548"
-     inkscape:cx="767.30303"
-     inkscape:cy="304.71684"
+     inkscape:zoom="0.57917414"
+     inkscape:cx="410.13859"
+     inkscape:cy="514.84973"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="true"
+     showgrid="false"
      units="px"
-     inkscape:window-width="1509"
-     inkscape:window-height="915"
+     inkscape:window-width="1627"
+     inkscape:window-height="904"
      inkscape:window-x="0"
      inkscape:window-y="25"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     showguides="true">
     <inkscape:grid
        type="xygrid"
        id="grid1912"
        originx="-20.410715"
-       originy="-20.410715" />
+       originy="-20.410714" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -87,11 +484,58 @@
      transform="translate(-20.410715,-20.410715)">
     <rect
        id="rect14"
-       width="473.22617"
-       height="244.92857"
+       width="520.06097"
+       height="269.16895"
        x="20.410715"
        y="20.410715"
-       style="fill:url(#linearGradient847);fill-opacity:1;stroke-width:0.264583" />
+       style="fill:url(#linearGradient847);fill-opacity:1;stroke-width:0.290769"
+       sodipodi:insensitive="true" />
+    <g
+       id="g15696"
+       transform="translate(-10.032494,108.16766)">
+      <rect
+         style="fill:url(#linearGradient15328);fill-opacity:1;stroke:#ff9f00;stroke-width:1.45878;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-02"
+         width="47.459782"
+         height="63.355133"
+         x="310.48331"
+         y="115.73085"
+         ry="9.1738415" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="ampLevel"
+         x="321.47025"
+         y="124.47523" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="mixerPunch"
+         x="334.3996"
+         y="124.47523" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.28856px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.377053;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="335.36832"
+         y="166.72031"
+         id="text8695-0-9"
+         transform="scale(0.96746809,1.0336258)"><tspan
+           sodipodi:role="line"
+           id="tspan10555-2"
+           x="335.36832"
+           y="166.72031"
+           style="stroke-width:0.377053">Amp</tspan></text>
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.264583;stroke-opacity:1"
@@ -103,280 +547,1147 @@
          id="tspan10"
          x="37.797619"
          y="38.961884"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.264583;stroke-opacity:1">Microkorg XL Panel</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.264583;stroke-opacity:1">Microkorg XL</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.264583;stroke-opacity:1"
-       x="52.916668"
-       y="59.372597"
+       x="43.593384"
+       y="56.940437"
        id="patchName"><tspan
          sodipodi:role="line"
          id="tspan927"
-         x="52.916668"
-         y="59.372597"
+         x="43.593384"
+         y="56.940437"
          style="fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.264583;stroke-opacity:1">Patch Name</tspan></text>
-    <g
-       id="g5262"
-       inkscape:label="osc1Controls"
-       transform="translate(6.3239483,4.3231339)">
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="57.349998"
-         height="27.566"
-         style="image-rendering:optimizeSpeed"
-         id="osc1waveform"
-         x="42.41069"
-         y="77.529709" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control1"
-         y="77.529709"
-         x="99.760689"
-         id="osc1Control1"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="21.320961"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="77.529709"
-         x="121.08165"
-         id="osc1Control2"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         inkscape:label="osc1Mod"
-         y="105.09571"
-         x="42.41069"
-         id="osc1Mod"
-         style="opacity:0.82;image-rendering:optimizeSpeed"
-         height="27.566154"
-         width="57.349998"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-    </g>
-    <g
-       id="osc2Controls"
-       transform="translate(0.38452618,-18.406083)">
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         y="155.39108"
-         x="48.350113"
-         style="image-rendering:optimizeSpeed"
-         height="27.566"
-         width="57.349998"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none"
-         id="osc2waveform" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         y="182.95708"
-         x="48.350113"
-         style="image-rendering:optimizeSpeed"
-         height="27.566"
-         width="57.349998"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none"
-         id="osc2mod" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="21.320961"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="osc2Control1"
-         x="105.70011"
-         y="155.39108"
-         inkscape:label="osc2Control1" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="21.320961"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="osc2Control2"
-         x="127.02107"
-         y="155.39108"
-         inkscape:label="osc2Control1" />
-    </g>
-    <g
-       id="mixer"
-       transform="translate(-6.7772979,-40.769792)">
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="20.745453"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="mixerOsc1"
-         x="172.05154"
-         y="123.84071"
-         inkscape:label="osc1Control2" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="20.745453"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="mixerOsc2"
-         x="192.797"
-         y="123.84071"
-         inkscape:label="osc1Control2" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="20.745453"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="mixerNoise"
-         x="213.54245"
-         y="123.84071"
-         inkscape:label="osc1Control2" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="123.84071"
-         x="234.2879"
-         id="mixerPunch"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-    </g>
-    <g
-       id="filter1"
-       transform="translate(1.7832031e-7,0.40830863)">
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="137.79477"
-         x="165.27425"
-         id="filter1Resonance"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="137.79477"
-         x="186.0197"
-         id="filter1Cutoff"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="20.745453"
-         height="55.132156"
-         style="image-rendering:optimizeSpeed"
-         id="filter1Type"
-         x="206.76515"
-         y="137.79477"
-         inkscape:label="osc1Control2" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         id="filter1Routing"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="57.349998"
-         height="27.566"
-         style="image-rendering:optimizeSpeed"
-         x="227.5106"
-         y="165.36093" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="137.79494"
-         x="284.8606"
-         id="filter1EnvIntensity"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="137.79494"
-         x="305.60602"
-         id="filter1KeyTrack"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         inkscape:label="osc1Control2"
-         y="137.79494"
-         x="326.3515"
-         id="filter1VelSens"
-         style="image-rendering:optimizeSpeed"
-         height="55.132156"
-         width="20.745453"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-    </g>
-    <image
-       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
-       xlink:href="envelope.svg"
-       y="55.298172"
-       x="255.87057"
-       id="envelope1"
-       style="image-rendering:optimizeSpeed"
-       height="74.330559"
-       width="82.8461"
-       inkscape:svg-dpi="96"
-       preserveAspectRatio="none" />
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
        xlink:href="envelope.svg"
        preserveAspectRatio="none"
        inkscape:svg-dpi="96"
-       width="82.8461"
+       width="95.475075"
        height="74.330559"
        style="image-rendering:optimizeSpeed"
+       id="envelope1"
+       x="149.04036"
+       y="23.886772" />
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
+       xlink:href="envelope.svg"
+       y="23.886772"
+       x="244.51544"
        id="envelope2"
-       x="349.25"
-       y="52.916668" />
+       style="image-rendering:optimizeSpeed"
+       height="74.330559"
+       width="95.475075"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
+    <g
+       id="g8226"
+       transform="translate(-19.446126,30.194227)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="osc1Mod"
+         x="41.78973"
+         y="120.34584" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="132.86722"
+         x="41.78973"
+         id="osc2Mod"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+    </g>
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+       xlink:href="sliderControl.svg"
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="96"
+       width="12.929348"
+       height="36.791019"
+       style="image-rendering:optimizeSpeed"
+       id="mixerOsc1"
+       x="137.32489"
+       y="102.93846" />
+    <g
+       id="g8704"
+       transform="translate(-22.213402,-7.404467)">
+      <rect
+         style="fill:url(#linearGradient7466);fill-opacity:1;stroke:#ff9f00;stroke-width:1.60192;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458"
+         width="57.361099"
+         height="63.211979"
+         x="87.625832"
+         y="107.25394"
+         ry="9.1531124" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="112.0011"
+         x="93.889549"
+         id="osc1Waveform"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860"
+         cx="87.070251"
+         cy="138.85992"
+         r="4.3953662"
+         class="patchJack" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="124.39292"
+         x="118.88531"
+         id="osc1Control2"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="104.53539"
+         y="167.61853"
+         id="text8695"><tspan
+           sodipodi:role="line"
+           id="tspan8693"
+           x="104.53539"
+           y="167.61853"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Osc 1</tspan></text>
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="124.35198"
+         x="98.419846"
+         id="osc1Control1"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+    </g>
+    <g
+       id="g8704-7"
+       transform="translate(-22.213402,55.807508)">
+      <rect
+         style="fill:url(#linearGradient8922);fill-opacity:1;stroke:#ff9f00;stroke-width:1.60192;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-0"
+         width="57.361099"
+         height="63.211979"
+         x="87.625832"
+         y="107.25394"
+         ry="9.1531124" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="124.52247"
+         x="99.80323"
+         id="osc2Control1"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="112.0011"
+         x="93.889549"
+         id="osc2Waveform"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1"
+         cx="87.070251"
+         cy="138.85992"
+         r="4.3953662"
+         class="patchJack" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="124.39292"
+         x="118.88531"
+         id="osc2Control2"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="102.94437"
+         y="167.61853"
+         id="text8695-4"><tspan
+           sodipodi:role="line"
+           id="tspan9064"
+           x="102.94437"
+           y="167.61853">Osc 2</tspan></text>
+    </g>
+    <g
+       id="g9569"
+       transform="translate(-22.213402,-7.404467)">
+      <rect
+         style="fill:url(#linearGradient8690);fill-opacity:1;stroke:#ff9f00;stroke-width:0.702258;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-3"
+         width="57.361099"
+         height="12.148179"
+         x="88.015656"
+         y="244.22501"
+         ry="1.7590597" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="103.42034"
+         y="252.86378"
+         id="text8695-4-2"><tspan
+           sodipodi:role="line"
+           id="tspan9062"
+           x="103.42034"
+           y="252.86378">noise</tspan></text>
+    </g>
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+       xlink:href="sliderControl.svg"
+       y="156.62424"
+       x="137.32489"
+       id="mixerOsc2"
+       style="image-rendering:optimizeSpeed"
+       height="36.791019"
+       width="12.929348"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+       xlink:href="sliderControl.svg"
+       y="210.31001"
+       x="137.32489"
+       id="mixerNoise"
+       style="image-rendering:optimizeSpeed"
+       height="36.791019"
+       width="12.929348"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
+    <g
+       id="g10439">
+      <rect
+         style="fill:url(#linearGradient9757);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4"
+         width="87.554977"
+         height="62.840599"
+         x="196.23178"
+         y="113.89616"
+         ry="9.0993366" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="201.42375"
+         id="filter1Cutoff"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="214.3531"
+         id="filter1Resonance"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="227.28246"
+         id="filter1Type"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="240.21181"
+         id="filter1EnvIntensity"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="253.14116"
+         id="filter1KeyTrack"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="266.0705"
+         id="filter1VelSens"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="223.60289"
+         y="170.24525"
+         id="text8695-0"><tspan
+           sodipodi:role="line"
+           id="tspan10555"
+           x="223.60289"
+           y="170.24525">filter 1</tspan></text>
+    </g>
+    <g
+       id="g10439-4"
+       transform="translate(0,62.840599)">
+      <rect
+         style="fill:url(#linearGradient10839);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-6"
+         width="87.554977"
+         height="62.840599"
+         x="196.23178"
+         y="113.89616"
+         ry="9.0993366" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="201.42375"
+         id="image7562-1-7"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="214.3531"
+         id="image7562-0-5"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="227.28246"
+         id="image7562-05-0"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="240.21181"
+         id="image7562-05-4-9"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="253.14116"
+         id="image7562-05-6-7"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="122.38326"
+         x="266.0705"
+         id="image7562-05-44-3"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="222.01186"
+         y="170.24525"
+         id="text8695-0-8"><tspan
+           sodipodi:role="line"
+           id="tspan11079"
+           x="222.01186"
+           y="170.24525">filter 2</tspan></text>
+    </g>
+    <g
+       id="g12077"
+       transform="translate(41.253242,-22.010742)">
+      <rect
+         style="fill:url(#linearGradient11363);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-0"
+         width="87.554977"
+         height="62.840599"
+         x="306.65735"
+         y="120.22807"
+         ry="9.0993366" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="126.93117"
+         x="363.56671"
+         id="image7562-05-6-8"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="126.93117"
+         x="376.49606"
+         id="image7562-05-44-32"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="334.02844"
+         y="176.57718"
+         id="text8695-0-0"><tspan
+           sodipodi:role="line"
+           id="tspan12066"
+           x="334.02844"
+           y="176.57718">lfo 1</tspan></text>
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-2-4"
+         x="313.67249"
+         y="126.54461" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-2-4-1"
+         x="313.67249"
+         y="139.06599" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-2-4-6"
+         x="313.67249"
+         y="151.58737" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.892801;stroke-linejoin:round"
+         id="path1860-3"
+         cx="375.93045"
+         cy="173.25098"
+         r="6.4926734"
+         class="patchJack" />
+    </g>
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
+       xlink:href="envelope.svg"
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="96"
+       width="95.475075"
+       height="74.330559"
+       style="image-rendering:optimizeSpeed"
+       id="envelope3"
+       x="339.99051"
+       y="23.886772" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 122.47134,193.15523 14.48158,-17.58478"
+       id="path13223"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 123.33334,131.26373 14.82638,-10.68879"
+       id="path13223-9" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 123.16094,242.97875 13.79198,-13.44719"
+       id="path13223-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#5cff00;stroke-width:1.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)"
+       d="m 122.47134,193.15523 -4.36363,-26.98324 -45.955764,-5.44346 -6.739517,-29.11578"
+       id="crossModArrow"
+       sodipodi:nodetypes="cccc" />
+    <g
+       id="osc2ModArrow">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="134.03613"
+         y="-130.52448"
+         id="osc2ModLabel"
+         transform="rotate(90)"><tspan
+           sodipodi:role="line"
+           id="tspan9062-9"
+           x="134.03613"
+           y="-130.52448">Ring</tspan></text>
+      <path
+         style="fill:none;stroke:#5cff00;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+         d="m 129.53905,126.4285 v 57.02668"
+         id="path13267" />
+    </g>
+    <g
+       id="filterRoutingIndividual"
+       style="display:inline">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14215)"
+         d="m 150.15619,121.43145 46.15325,23.23799"
+         id="path14211" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send)"
+         d="m 150.15619,175.00794 21.3015,30.66124 h 24.85175"
+         id="path14331" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 149.83344,229.55268 21.62425,-23.8835"
+         id="path14461" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14215-1)"
+         d="m 284.65723,141.46228 17.04704,111.98239"
+         id="path14211-1"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14215-1-9)"
+         d="m 284.20733,209.51159 17.49694,43.93308"
+         id="path14211-1-9"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="filterRoutingSerial"
+       style="display:inline">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13824)"
+         d="m 150.15619,121.7542 22.91525,23.23799 h 22.91525"
+         id="path13768" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150.15619,174.68519 22.91525,-29.693"
+         id="path13770" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150.47894,229.55268 22.5925,-84.56049"
+         id="path13772" />
+      <path
+         style="fill:none;stroke:#00ff00;stroke-width:1.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13778)"
+         d="m 284.74292,143.05569 -8.71425,30.01575 -75.84623,8.3915 -3.22751,25.49724"
+         id="path13774"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker18513)"
+         d="m 283.25337,208.40235 18.4509,45.04232"
+         id="path13770-4"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="filterRoutingParallel"
+       style="display:inline">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13968)"
+         d="m 150.15619,121.43145 20.97875,53.57649 24.85175,-29.0475"
+         id="path13964" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14028)"
+         d="m 150.15619,175.00794 h 20.97875 l 24.85175,33.88874"
+         id="path14024" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150.15619,227.61618 20.97875,-52.60824"
+         id="path14138" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker17977)"
+         d="m 284.22162,149.34671 17.48265,104.09796"
+         id="path14138-1"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker17977-6)"
+         d="m 284.36655,207.90517 17.33772,45.5395"
+         id="path14138-1-9"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="filterRoutingSingle"
+       style="display:inline"
+       transform="translate(0.32052636,-1.3218085)"
+       inkscape:label="filterRoutingSingle">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13824-4)"
+         d="m 150.15619,121.7542 22.91525,23.23799 h 22.91525"
+         id="path13768-1" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150.15619,174.68519 22.91525,-29.693"
+         id="path13770-6" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150.47894,229.55268 22.5925,-84.56049"
+         id="path13772-0" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker18513-7)"
+         d="m 282.79654,146.27366 18.90773,107.17101"
+         id="path13770-4-4"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+       xlink:href="selectorControl.svg"
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="96"
+       width="43.068825"
+       height="12.521371"
+       style="image-rendering:optimizeSpeed"
+       id="filter1Routing"
+       x="218.47485"
+       y="241.27383" />
+    <rect
+       style="fill:url(#linearGradient18970);fill-opacity:1;stroke:#ff9f00;stroke-width:2.01881;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7458-4-02-4"
+       width="85.640305"
+       height="253.22815"
+       x="445.09058"
+       y="29.180929"
+       ry="15.945846" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.28856px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.377053;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="483.80923"
+       y="264.60541"
+       id="text8695-0-9-2"
+       transform="scale(0.96746811,1.0336258)"><tspan
+         sodipodi:role="line"
+         id="tspan19097"
+         x="483.80923"
+         y="264.60541">patches</tspan></text>
+    <g
+       id="g9569-4-6"
+       transform="translate(-33.212696,26.534887)">
+      <rect
+         style="fill:url(#linearGradient19399);fill-opacity:1;stroke:#ff9f00;stroke-width:0.820408;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-3-2-3"
+         width="79.054962"
+         height="12.030028"
+         x="88.074738"
+         y="244.28407"
+         ry="1.7419513" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="91.606598"
+         y="252.86378"
+         id="text8695-4-2-8-7"><tspan
+           sodipodi:role="line"
+           id="tspan19405"
+           x="91.606598"
+           y="252.86378">pitch wheel</tspan></text>
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0"
+         cx="158.5722"
+         cy="250.07274"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g9569-4"
+       transform="translate(-11.409385,14.496142)">
+      <rect
+         style="fill:url(#linearGradient19355);fill-opacity:1;stroke:#ff9f00;stroke-width:0.803012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-3-2"
+         width="75.628357"
+         height="12.047425"
+         x="69.698021"
+         y="244.27538"
+         ry="1.7444705" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="74.769249"
+         y="252.86378"
+         id="text8695-4-2-8"><tspan
+           sodipodi:role="line"
+           id="tspan19361"
+           x="74.769249"
+           y="252.86378">mod wheel</tspan></text>
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-6"
+         cx="135.97614"
+         cy="250.39355"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g19627"
+       transform="translate(-49.859306,-8.399198)">
+      <rect
+         style="fill:url(#linearGradient19443);fill-opacity:1;stroke:#ff9f00;stroke-width:0.702258;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-3-2-30"
+         width="57.361099"
+         height="12.148179"
+         x="183.77631"
+         y="267.17072"
+         ry="1.7590597" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="187.36725"
+         y="275.80951"
+         id="text8695-4-2-8-4"><tspan
+           sodipodi:role="line"
+           id="tspan19449"
+           x="187.36725"
+           y="275.80951">Key Vel</tspan></text>
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-6"
+         cx="233.17354"
+         cy="273.35355"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g19636"
+       transform="translate(-107.26087,3.6077753)">
+      <rect
+         style="fill:url(#linearGradient19469);fill-opacity:1;stroke:#ff9f00;stroke-width:0.783184;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-3-2-9"
+         width="71.821518"
+         height="12.067253"
+         x="241.17787"
+         y="267.21118"
+         ry="1.7473415" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="244.72835"
+         y="275.80951"
+         id="text8695-4-2-8-0"><tspan
+           sodipodi:role="line"
+           id="tspan19475"
+           x="244.72835"
+           y="275.80951">key track</tspan></text>
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3"
+         cx="305.11493"
+         cy="273.73624"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175"
+       transform="translate(-2.4321613)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g12077-5"
+       transform="translate(41.253242,40.829849)">
+      <rect
+         style="fill:url(#linearGradient19867);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7458-4-0-3"
+         width="87.554977"
+         height="62.840599"
+         x="306.65735"
+         y="120.22807"
+         ry="9.0993366" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-05-6-8-0"
+         x="363.56671"
+         y="126.93117" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-05-44-32-9"
+         x="376.49606"
+         y="126.93117" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="334.02844"
+         y="176.57718"
+         id="text8695-0-0-4"><tspan
+           sodipodi:role="line"
+           id="tspan12066-3"
+           x="334.02844"
+           y="176.57718">lfo 1</tspan></text>
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="126.54461"
+         x="313.67249"
+         id="image7109-2-4-5"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="139.06599"
+         x="313.67249"
+         id="image7109-2-4-1-7"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="151.58737"
+         x="313.67249"
+         id="image7109-2-4-6-9"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.892801;stroke-linejoin:round"
+         id="path1860-3-3"
+         cx="375.93045"
+         cy="173.25098"
+         r="6.4926734"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175-5"
+       transform="translate(-2.4321613,36.791019)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1-1"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-6"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0-6"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5-2"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175-2"
+       transform="translate(-2.4321613,73.582038)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1-5"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-9"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0-5"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5-5"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175-1"
+       transform="translate(-2.4321613,110.37306)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1-3"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-92"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0-2"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5-4"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175-4"
+       transform="translate(-2.4321613,147.16408)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1-6"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-2"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0-0"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5-0"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
+    <g
+       id="g20175-0"
+       transform="translate(-2.4321613,183.9551)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
+         xlink:href="sliderControl.svg"
+         y="36.618298"
+         x="501.54514"
+         id="image7562-1-74-1-2"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-08"
+         x="452.90128"
+         y="42.492428" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="image7109-1-4-3-0-8"
+         x="452.90128"
+         y="55.013813" />
+      <circle
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
+         id="path1860-1-0-3-5-41"
+         cx="524.11389"
+         cy="55.013805"
+         r="4.3953662"
+         class="patchJack" />
+    </g>
   </g>
 </svg>
