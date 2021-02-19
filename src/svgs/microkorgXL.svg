@@ -445,11 +445,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.57917414"
-     inkscape:cx="410.13859"
-     inkscape:cy="514.84973"
+     inkscape:zoom="1.5494047"
+     inkscape:cx="1576.6631"
+     inkscape:cy="546.92547"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="lfo2Group"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -504,25 +504,25 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="12.929348"
-         height="36.791019"
-         style="image-rendering:optimizeSpeed"
-         id="ampLevel"
+         y="124.47523"
          x="321.47025"
-         y="124.47523" />
+         id="ampLevel"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="12.929348"
-         height="36.791019"
-         style="image-rendering:optimizeSpeed"
-         id="mixerPunch"
+         y="124.47523"
          x="334.3996"
-         y="124.47523" />
+         id="mixerPunch"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.28856px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.377053;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -562,28 +562,39 @@
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
        xlink:href="envelope.svg"
-       preserveAspectRatio="none"
-       inkscape:svg-dpi="96"
-       width="95.475075"
-       height="74.330559"
-       style="image-rendering:optimizeSpeed"
-       id="envelope1"
-       x="149.04036"
-       y="23.886772" />
-    <image
-       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
-       xlink:href="envelope.svg"
        y="23.886772"
-       x="244.51544"
-       id="envelope2"
+       x="149.04036"
+       id="envelope1"
        style="image-rendering:optimizeSpeed"
        height="74.330559"
        width="95.475075"
        inkscape:svg-dpi="96"
        preserveAspectRatio="none" />
+    <image
+       sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
+       xlink:href="envelope.svg"
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="96"
+       width="95.475075"
+       height="74.330559"
+       style="image-rendering:optimizeSpeed"
+       id="envelope2"
+       x="244.51544"
+       y="23.886772" />
     <g
        id="g8226"
        transform="translate(-19.446126,30.194227)">
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="120.34584"
+         x="41.78973"
+         id="osc1Mod"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
@@ -592,32 +603,21 @@
          width="43.068825"
          height="12.521371"
          style="image-rendering:optimizeSpeed"
-         id="osc1Mod"
-         x="41.78973"
-         y="120.34584" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         y="132.86722"
-         x="41.78973"
          id="osc2Mod"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="41.78973"
+         y="132.86722" />
     </g>
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
        xlink:href="sliderControl.svg"
-       preserveAspectRatio="none"
-       inkscape:svg-dpi="96"
-       width="12.929348"
-       height="36.791019"
-       style="image-rendering:optimizeSpeed"
-       id="mixerOsc1"
+       y="102.93846"
        x="137.32489"
-       y="102.93846" />
+       id="mixerOsc1"
+       style="image-rendering:optimizeSpeed"
+       height="36.791019"
+       width="12.929348"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
     <g
        id="g8704"
        transform="translate(-22.213402,-7.404467)">
@@ -632,14 +632,14 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         y="112.0011"
-         x="93.889549"
-         id="osc1Waveform"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="osc1Waveform"
+         x="93.889549"
+         y="112.0011" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860"
@@ -650,14 +650,14 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="124.39292"
-         x="118.88531"
-         id="osc1Control2"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="osc1Control2"
+         x="118.88531"
+         y="124.39292" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -672,14 +672,14 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="124.35198"
-         x="98.419846"
-         id="osc1Control1"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="osc1Control1"
+         x="98.419846"
+         y="124.35198" />
     </g>
     <g
        id="g8704-7"
@@ -695,25 +695,25 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="124.52247"
-         x="99.80323"
-         id="osc2Control1"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="osc2Control1"
+         x="99.80323"
+         y="124.52247" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         y="112.0011"
-         x="93.889549"
-         id="osc2Waveform"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="osc2Waveform"
+         x="93.889549"
+         y="112.0011" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1"
@@ -724,14 +724,14 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="124.39292"
-         x="118.88531"
-         id="osc2Control2"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="osc2Control2"
+         x="118.88531"
+         y="124.39292" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -768,25 +768,25 @@
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
        xlink:href="sliderControl.svg"
-       y="156.62424"
-       x="137.32489"
-       id="mixerOsc2"
-       style="image-rendering:optimizeSpeed"
-       height="36.791019"
-       width="12.929348"
+       preserveAspectRatio="none"
        inkscape:svg-dpi="96"
-       preserveAspectRatio="none" />
+       width="12.929348"
+       height="36.791019"
+       style="image-rendering:optimizeSpeed"
+       id="mixerOsc2"
+       x="137.32489"
+       y="156.62424" />
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
        xlink:href="sliderControl.svg"
-       y="210.31001"
-       x="137.32489"
-       id="mixerNoise"
-       style="image-rendering:optimizeSpeed"
-       height="36.791019"
-       width="12.929348"
+       preserveAspectRatio="none"
        inkscape:svg-dpi="96"
-       preserveAspectRatio="none" />
+       width="12.929348"
+       height="36.791019"
+       style="image-rendering:optimizeSpeed"
+       id="mixerNoise"
+       x="137.32489"
+       y="210.31001" />
     <g
        id="g10439">
       <rect
@@ -800,69 +800,69 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="201.42375"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
          id="filter1Cutoff"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="201.42375"
+         y="122.38326" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="214.3531"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
          id="filter1Resonance"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="214.3531"
+         y="122.38326" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="227.28246"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
          id="filter1Type"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="227.28246"
+         y="122.38326" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="240.21181"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
          id="filter1EnvIntensity"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="240.21181"
+         y="122.38326" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="253.14116"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
          id="filter1KeyTrack"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         x="253.14116"
+         y="122.38326" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="266.0705"
-         id="filter1VelSens"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter1VelSens"
+         x="266.0705"
+         y="122.38326" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -875,7 +875,7 @@
            y="170.24525">filter 1</tspan></text>
     </g>
     <g
-       id="g10439-4"
+       id="filter2Group"
        transform="translate(0,62.840599)">
       <rect
          style="fill:url(#linearGradient10839);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -888,79 +888,79 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="201.42375"
-         id="image7562-1-7"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter2Cutoff"
+         x="208.26956"
+         y="120.17493" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="214.3531"
-         id="image7562-0-5"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter2Resonance"
+         x="221.19891"
+         y="120.17493" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="227.28246"
-         id="image7562-05-0"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter2EnvIntensity"
+         x="234.12827"
+         y="120.17493" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="240.21181"
-         id="image7562-05-4-9"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter2KeyTrack"
+         x="247.05762"
+         y="120.17493" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="253.14116"
-         id="image7562-05-6-7"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
-         xlink:href="sliderControl.svg"
-         y="122.38326"
-         x="266.0705"
-         id="image7562-05-44-3"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
          width="12.929348"
-         inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="filter2VelSens"
+         x="259.98697"
+         y="120.17493" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="222.01186"
-         y="170.24525"
+         x="245.38512"
+         y="169.0956"
          id="text8695-0-8"><tspan
            sodipodi:role="line"
            id="tspan11079"
-           x="222.01186"
-           y="170.24525">filter 2</tspan></text>
+           x="245.38512"
+           y="169.0956">filter 2</tspan></text>
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="filter2Type"
+         x="200.81847"
+         y="160.35002" />
     </g>
     <g
        id="g12077"
@@ -976,25 +976,25 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="126.93117"
-         x="363.56671"
-         id="image7562-05-6-8"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="lfo1Frequency"
+         x="363.56671"
+         y="126.93117" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="126.93117"
-         x="376.49606"
-         id="image7562-05-44-32"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
-         width="12.929348"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-05-44-32"
+         x="376.49606"
+         y="126.93117" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1008,36 +1008,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-2-4"
+         y="126.54461"
          x="313.67249"
-         y="126.54461" />
+         id="lfo1Waveform"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-2-4-1"
+         y="139.06599"
          x="313.67249"
-         y="139.06599" />
+         id="lfo1KeySync"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-2-4-6"
+         y="151.58737"
          x="313.67249"
-         y="151.58737" />
+         id="lfo1BpmSync"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.892801;stroke-linejoin:round"
          id="path1860-3"
@@ -1049,14 +1049,14 @@
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/envelope.svg"
        xlink:href="envelope.svg"
-       preserveAspectRatio="none"
-       inkscape:svg-dpi="96"
-       width="95.475075"
-       height="74.330559"
-       style="image-rendering:optimizeSpeed"
-       id="envelope3"
+       y="23.886772"
        x="339.99051"
-       y="23.886772" />
+       id="envelope3"
+       style="image-rendering:optimizeSpeed"
+       height="74.330559"
+       width="95.475075"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
     <path
        style="fill:#ffffff;stroke:#ffffff;stroke-width:1.665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 122.47134,193.15523 14.48158,-17.58478"
@@ -1198,14 +1198,14 @@
     <image
        sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
        xlink:href="selectorControl.svg"
-       preserveAspectRatio="none"
-       inkscape:svg-dpi="96"
-       width="43.068825"
-       height="12.521371"
-       style="image-rendering:optimizeSpeed"
-       id="filter1Routing"
+       y="241.27383"
        x="218.47485"
-       y="241.27383" />
+       id="filter1Routing"
+       style="image-rendering:optimizeSpeed"
+       height="12.521371"
+       width="43.068825"
+       inkscape:svg-dpi="96"
+       preserveAspectRatio="none" />
     <rect
        style="fill:url(#linearGradient18970);fill-opacity:1;stroke:#ff9f00;stroke-width:2.01881;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect7458-4-02-4"
@@ -1347,36 +1347,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5"
@@ -1386,7 +1386,7 @@
          class="patchJack" />
     </g>
     <g
-       id="g12077-5"
+       id="lfo2Group"
        transform="translate(41.253242,40.829849)">
       <rect
          style="fill:url(#linearGradient19867);fill-opacity:1;stroke:#ff9f00;stroke-width:1.97331;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1399,25 +1399,25 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="12.929348"
-         height="36.791019"
-         style="image-rendering:optimizeSpeed"
-         id="image7562-05-6-8-0"
+         y="126.93117"
          x="363.56671"
-         y="126.93117" />
+         id="lfo2Frequency"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="12.929348"
-         height="36.791019"
-         style="image-rendering:optimizeSpeed"
-         id="image7562-05-44-32-9"
+         y="126.93117"
          x="376.49606"
-         y="126.93117" />
+         id="image7562-05-44-32-9"
+         style="image-rendering:optimizeSpeed"
+         height="36.791019"
+         width="12.929348"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Good Times';-inkscape-font-specification:'Good Times, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ff9f00;stroke-width:0.365;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1427,40 +1427,40 @@
            sodipodi:role="line"
            id="tspan12066-3"
            x="334.02844"
-           y="176.57718">lfo 1</tspan></text>
+           y="176.57718">lfo 2</tspan></text>
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         y="126.54461"
-         x="313.67249"
-         id="image7109-2-4-5"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="lfo2Waveform"
+         x="313.67249"
+         y="126.54461" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         y="139.06599"
-         x="313.67249"
-         id="image7109-2-4-1-7"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="lfo2KeySync"
+         x="313.67249"
+         y="139.06599" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         y="151.58737"
-         x="313.67249"
-         id="image7109-2-4-6-9"
-         style="image-rendering:optimizeSpeed"
-         height="12.521371"
-         width="43.068825"
+         preserveAspectRatio="none"
          inkscape:svg-dpi="96"
-         preserveAspectRatio="none" />
+         width="43.068825"
+         height="12.521371"
+         style="image-rendering:optimizeSpeed"
+         id="lfo2BpmSync"
+         x="313.67249"
+         y="151.58737" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.892801;stroke-linejoin:round"
          id="path1860-3-3"
@@ -1475,36 +1475,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1-1"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1-1"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3-6"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3-6"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0-6"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5-2"
@@ -1519,36 +1519,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1-5"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1-5"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3-9"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3-9"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0-5"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5-5"
@@ -1563,36 +1563,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1-3"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1-3"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3-92"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3-92"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0-2"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5-4"
@@ -1607,36 +1607,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1-6"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1-6"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3-2"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3-2"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0-0"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5-0"
@@ -1651,36 +1651,36 @@
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/sliderControl.svg"
          xlink:href="sliderControl.svg"
-         y="36.618298"
-         x="501.54514"
-         id="image7562-1-74-1-2"
-         style="image-rendering:optimizeSpeed"
-         height="36.791019"
+         preserveAspectRatio="none"
+         inkscape:svg-dpi="96"
          width="12.929348"
+         height="36.791019"
+         style="image-rendering:optimizeSpeed"
+         id="image7562-1-74-1-2"
+         x="501.54514"
+         y="36.618298" />
+      <image
+         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
+         xlink:href="selectorControl.svg"
+         y="42.492428"
+         x="452.90128"
+         id="image7109-1-4-3-08"
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
          inkscape:svg-dpi="96"
          preserveAspectRatio="none" />
       <image
          sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
          xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
-         id="image7109-1-4-3-08"
+         y="55.013813"
          x="452.90128"
-         y="42.492428" />
-      <image
-         sodipodi:absref="/Users/ben/projects/microkorgXL/src/svgs/selectorControl.svg"
-         xlink:href="selectorControl.svg"
-         preserveAspectRatio="none"
-         inkscape:svg-dpi="96"
-         width="43.068825"
-         height="12.521371"
-         style="image-rendering:optimizeSpeed"
          id="image7109-1-4-3-0-8"
-         x="452.90128"
-         y="55.013813" />
+         style="image-rendering:optimizeSpeed"
+         height="12.521371"
+         width="43.068825"
+         inkscape:svg-dpi="96"
+         preserveAspectRatio="none" />
       <circle
          style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.604402;stroke-linejoin:round"
          id="path1860-1-0-3-5-41"

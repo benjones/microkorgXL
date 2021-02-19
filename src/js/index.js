@@ -64,7 +64,7 @@ window.onload = function () {
                     //output.sendSysex(0x42, [0x30, 0x7e, 0x23]);
                     //input.removeListener('sysex');
 
-                    ui.initializeFromProgram(e.data);
+                    ui.handleSysex(e.data);
                     //let mk = new MicroKorgXL(e.data);
                     //console.log(mk.osc1Wave);
                 });
@@ -119,16 +119,16 @@ class uiHandle {
                         new SelectorControlOption("Unison", 2, 64),
                         new SelectorControlOption("VPM", 3, 96),
                     ],
-                    onChange: function(){
-                        console.log("osc1mod onchange");
+                    onChange: function () {
+                        //console.log("osc1mod onchange");
                         let arrow = document.getElementById("theSVG").contentDocument.querySelector("#crossModArrow");
                         let currentText = this.values[this.selectedOption].displayText
-                        console.log(currentText);
-                        if(currentText == "Cross"){
-                            console.log("setting visible");
+                        //console.log(currentText);
+                        if (currentText == "Cross") {
+                            //console.log("setting visible");
                             arrow.style.visibility = "visible";
                         } else {
-                            console.log("setting hidden");
+                            //console.log("setting hidden");
                             arrow.style.visibility = "hidden";
                         }
                     }
@@ -169,12 +169,12 @@ class uiHandle {
                         new SelectorControlOption("Sync", 2, 64),
                         new SelectorControlOption("Ring Sync", 3, 96),
                     ],
-                    onChange: function(){
-                        console.log("osc2mod onchange");
+                    onChange: function () {
+                        //console.log("osc2mod onchange");
                         let arrowGroup = document.getElementById("theSVG").contentDocument.querySelector("#osc2ModArrow");
                         let currentText = this.values[this.selectedOption].displayText
-                        console.log(currentText);
-                        if(currentText == "Off"){
+                        //console.log(currentText);
+                        if (currentText == "Off") {
                             arrowGroup.style.visibility = "hidden";
                         } else {
                             arrowGroup.style.visibility = "visible";
@@ -257,13 +257,13 @@ class uiHandle {
                         new SelectorControlOption("Parallel", 2, 64),
                         new SelectorControlOption("Indivual", 3, 96),
                     ],
-                    onChange: function(){
-                        console.log("filterRouting onchange");
+                    onChange: function () {
+                        //console.log("filterRouting onchange");
                         let filterElements = ["#filterRoutingSingle", "#filterRoutingSerial", "#filterRoutingParallel", "#filterRoutingIndividual"]
-                            .map( id => document.getElementById("theSVG").contentDocument.querySelector(id));
-                        console.log(filterElements);
-                        console.log(this.selectedOption); 
-                        for(let i = 0; i < 4; i++ ){
+                            .map(id => document.getElementById("theSVG").contentDocument.querySelector(id));
+                        //console.log(filterElements);
+                        //console.log(this.selectedOption);
+                        for (let i = 0; i < 4; i++) {
                             filterElements[i].style.visibility = (i == this.selectedOption) ? "visible" : "hidden";
                         }
                     }
@@ -286,7 +286,10 @@ class uiHandle {
                     name: "Vel Sens",
                     sysexFunc: (midiOut, val) => {
                         //global channel, modelID, change param, ??, val
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x36, 0, val, 0x7f];
+                        let sysexRep = intToSysex(Math.min(val, 126) - 63);
+                        //console.log(sysexRep);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x36, 0, sysexRep[0], sysexRep[1]];
+                        //console.log(toSend);
                         midiOut.sendSysex(0x42, toSend);
                     }
                 }),
@@ -303,6 +306,160 @@ class uiHandle {
                     ccNumbers: { attack: 73, decay: 75, sustain: 70, release: 72 }
                 }),
 
+            filter2Cutoff: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#filter2Cutoff")),
+                {
+                    name: "Cutoff",
+                    ccNumber: 30,
+                }),
+            filter2Resonance: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#filter2Resonance")),
+                {
+                    name: "Resonance",
+                    ccNumber: 68,
+                }),
+            filter2EnvIntensity: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#filter2EnvIntensity")),
+                {
+                    name: "Env Int",
+                    ccNumber: 69,
+                }),
+            filter2KeyTrack: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#filter2KeyTrack")),
+                {
+                    name: "Key Track",
+                    ccNumber: 82,
+                }),
+            filter2VelSen: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#filter2VelSens")),
+                {
+                    name: "Vel Sens",
+                    sysexFunc: (midiOut, val) => {
+                        //global channel, modelID, change param, ??, val
+                        let sysexRep = intToSysex(Math.min(val, 126) - 63);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x46, 0, sysexRep[0], sysexRep[1]];
+                        midiOut.sendSysex(0x42, toSend);
+                    }
+                }),
+            filter2Type: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#filter2Type")),
+                {
+                    name: "Type",
+                    ccNumber: 29,
+                    values: [
+                        new SelectorControlOption("LPF", 0, 0),
+                        new SelectorControlOption("HPF", 1, 43),
+                        new SelectorControlOption("BPF", 2, 85)
+                    ]
+
+                }),
+            lfo1Waveform: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo1Waveform")),
+                {
+                    name: "Waveform",
+                    ccNumber: 89,
+                    values: [
+                        new SelectorControlOption("Saw", 0, 0),
+                        new SelectorControlOption("Square", 1, 26),
+                        new SelectorControlOption("Triangle", 2, 51),
+                        new SelectorControlOption("S&H", 3, 77),
+                        new SelectorControlOption("Random", 4, 102),
+                    ]
+                }
+            ),
+            lfo1KeySync: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo1KeySync")),
+                {
+                    name: "Key Sync",
+                    sysexFunc: (midiOut, val) => {
+                        //global channel, modelID, change param, ??, val
+                        let sysexRep = intToSysex(val);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x14, 1, sysexRep[0], sysexRep[1]];
+                        midiOut.sendSysex(0x42, toSend);
+                    },
+                    values: [
+                        new SelectorControlOption("Off", 0, 0),
+                        new SelectorControlOption("Timbre", 1, 1),
+                        new SelectorControlOption("Voice", 2, 2),
+                    ]
+                }
+            ),
+            lfo1BpmSync: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo1BpmSync")),
+                {
+                    name: "BPM Sync",
+                    sysexFunc: (midiOut, val) => {
+                        //global channel, modelID, change param, ??, val
+                        let sysexRep = intToSysex(val);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x13, 1, sysexRep[0], sysexRep[1]];
+                        midiOut.sendSysex(0x42, toSend);
+                    },
+                    values: [
+                        new SelectorControlOption("Off", 0, 0),
+                        new SelectorControlOption("On", 1, 1),
+                    ]
+                }
+            ),
+            lfo1Frequency: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#lfo1Frequency")),
+                {
+                    name: "Frequency",
+                    ccNumber: 90,
+                }),
+            lfo2Waveform: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo2Waveform")),
+                {
+                    name: "Waveform",
+                    ccNumber: 102,
+                    values: [
+                        new SelectorControlOption("Saw", 0, 0),
+                        new SelectorControlOption("Square+", 1, 26),
+                        new SelectorControlOption("Sine", 2, 51),
+                        new SelectorControlOption("S&H", 3, 77),
+                        new SelectorControlOption("Random", 4, 102),
+                    ]
+                }
+            ),
+            lfo2KeySync: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo2KeySync")),
+                {
+                    name: "Key Sync",
+                    sysexFunc: (midiOut, val) => {
+                        //global channel, modelID, change param, ??, val
+                        let sysexRep = intToSysex(val);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x24, 1, sysexRep[0], sysexRep[1]];
+                        midiOut.sendSysex(0x42, toSend);
+                    },
+                    values: [
+                        new SelectorControlOption("Off", 0, 0),
+                        new SelectorControlOption("Timbre", 1, 1),
+                        new SelectorControlOption("Voice", 2, 2),
+                    ]
+                }
+            ),
+            lfo2BpmSync: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#lfo2BpmSync")),
+                {
+                    name: "BPM Sync",
+                    sysexFunc: (midiOut, val) => {
+                        //global channel, modelID, change param, ??, val
+                        let sysexRep = intToSysex(val);
+                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x23, 1, sysexRep[0], sysexRep[1]];
+                        midiOut.sendSysex(0x42, toSend);
+                    },
+                    values: [
+                        new SelectorControlOption("Off", 0, 0),
+                        new SelectorControlOption("On", 1, 1),
+                    ]
+                }
+            ),
+            lfo2Frequency: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#lfo2Frequency")),
+                {
+                    name: "Frequency",
+                    ccNumber: 76,
+                }),
+
 
         };
 
@@ -310,8 +467,17 @@ class uiHandle {
 
     connectCallbacks(midiOut) {
         for (let control in this.controls) {
-            console.log(control);
+            //console.log(control);
             this.controls[control].connectCallbacks(midiOut);
+        }
+    }
+
+    handleSysex(data) {
+        if (data[4] == 0x40) {//data dump message
+            this.initializeFromProgram(data);
+        } else {
+            console.log("sysex non program dump message");
+            console.log(data);
         }
     }
 
@@ -332,12 +498,14 @@ class uiHandle {
             const groupNumber = Math.floor(index / 7);
             const topBitByte = data[firstByte + groupNumber * 8];
             const lowBits = data[firstByte + groupNumber * 8 + 1 + offsetInGroup];
+            //console.log(index, offsetInGroup, groupNumber, topBitByte, lowBits);
             return lowBits | (((topBitByte >> offsetInGroup) & 1) << 7);
 
         }
 
+        //names are only the first 8 bytes on this model
         let programName = "";
-        for (let i = 0; i < 12; i++) {
+        for (let i = 0; i < 8; i++) {
             const byte = getByte(i);
             if (byte == 0) break;
             programName += String.fromCharCode(getByte(i));
@@ -345,7 +513,7 @@ class uiHandle {
         console.log(programName);
         console.log(this.svg.querySelector("#patchName"));
         this.svg.querySelector("#patchName").textContent = programName;
-        for (let i = 12; i < 80; i++) {
+        for (let i = 50; i < 100; i++) {
             console.log(i, getByte(i));
         }
         /*
@@ -389,12 +557,22 @@ class uiHandle {
 
         //filter1
         this.controls.filter1Routing.setFromSysex(getByte(44) & 3);
+
         this.controls.filter1Type.setFromSysex(getByte(45));
         this.controls.filter1Cutoff.setFromSysex(getByte(46));
         this.controls.filter1Resonance.setFromSysex(getByte(47));
         this.controls.filter1EnvIntensity.setFromSysex(getByte(48));
         this.controls.filter1KeyTrack.setFromSysex(getByte(49));
         this.controls.filter1VelSen.setFromSysex(getByte(50));
+
+        //filter2
+        this.controls.filter2Cutoff.setFromSysex(getByte(51));
+        this.controls.filter2Resonance.setFromSysex(getByte(52));
+        this.controls.filter2EnvIntensity.setFromSysex(getByte(53));
+        this.controls.filter2KeyTrack.setFromSysex(getByte(54));
+        this.controls.filter2VelSen.setFromSysex(getByte(55));
+        this.controls.filter2Type.setFromSysex(getByte(44) >>> 4);
+
 
         //amp
         this.controls.ampLevel.setFromSysex(getByte(56));
@@ -410,8 +588,24 @@ class uiHandle {
             sustain: getByte(72), release: getByte(73)
         });
 
-        this.addPatch([this.controls.env1.jack, this.controls.filter1Cutoff.jack
-            /*, this.controls.filter2Cutoff.*/], patchColors.filterCutoff);
+        //eg3 ADSR 76, 77, 78, 79, vel intmmm
+
+        //lfo1
+        this.controls.lfo1Waveform.setFromSysex(getByte(82));
+        this.controls.lfo1Frequency.setFromSysex(getByte(83));
+        this.controls.lfo1KeySync.setFromSysex((getByte(84) >> 5) & 3);
+        this.controls.lfo1BpmSync.setFromSysex(getByte(84) >> 7);
+
+        //lfo2
+        this.controls.lfo2Waveform.setFromSysex(getByte(86));
+        this.controls.lfo2Frequency.setFromSysex(getByte(87));
+        this.controls.lfo2KeySync.setFromSysex((getByte(88) >> 5) & 3);
+        this.controls.lfo2BpmSync.setFromSysex(getByte(88) >> 7);
+
+
+
+        this.addPatch([this.controls.env1.jack, this.controls.filter1Cutoff.jack,
+        this.controls.filter2Cutoff.jack], patchColors.filterCutoff);
         this.addPatch([this.controls.env2.jack, this.controls.ampLevel.jack
         ], patchColors.ampLevel);
     }
@@ -518,11 +712,15 @@ function imageToUse(imageNode) {
 class SelectorControlWidget {
 
     constructor(svgNode, options) {
-        console.log("constructing SCW");
-        console.log(options);
+        //console.log("constructing SCW");
+        //console.log(options);
         this.svgNode = svgNode;
         this.name = options.name;
-        this.ccNumber = options.ccNumber;
+        if ('ccNumber' in options) {
+            this.ccNumber = options.ccNumber;
+        } else {
+            this.sysexFunc = options.sysexFunc;
+        }
         this.values = options.values; //
         if ("onChange" in options) {
             this.onChange = options.onChange;
@@ -532,16 +730,20 @@ class SelectorControlWidget {
     }
 
     connectCallbacks(midiOut) {
-        console.log("Attaching listener to");
-        console.log(this.svgNode.querySelector(".selectedOption"));
+        //console.log("Attaching listener to");
+        //console.log(this.svgNode.querySelector(".selectedOption"));
         this.svgNode.querySelector(".selectedOption").addEventListener("click",
             () => {
                 this.selectedOption++
                 this.selectedOption %= this.values.length;
                 this.svgNode.querySelector(".selectedOption").textContent =
                     this.values[this.selectedOption].displayText;
-                midiOut.sendControlChange(this.ccNumber,
-                    this.values[this.selectedOption].controlChangeValue);
+                if ('ccNumber' in this) {
+                    midiOut.sendControlChange(this.ccNumber,
+                        this.values[this.selectedOption].controlChangeValue);
+                } else {
+                    this.sysexFunc(midiOut, this.values[this.selectedOption].controlChangeValue);
+                }
                 if (this.onChange) {
                     this.onChange.call(this);
                 }
@@ -570,7 +772,7 @@ class SelectorControlOption {
 
 class SliderControlWidget {
     constructor(svgNode, options) {
-        console.log("making slider control widget", options);
+        //console.log("making slider control widget", options);
         this.svgNode = svgNode;
         this.name = options.name;
         if ('ccNumber' in options)
@@ -580,9 +782,9 @@ class SliderControlWidget {
         this.svgNode.querySelector(".controlName").textContent = this.name;
 
         this.jack = this.svgNode.querySelector(".patchJack");
-        console.log(this.jack, this.jack.fill);
+        //console.log(this.jack, this.jack.fill);
         this.jack.style.fill = disabledJackColor;
-        console.log(this.jack.fill);
+        //console.log(this.jack.fill);
     }
 
     connectCallbacks(midiOut) {
@@ -593,7 +795,7 @@ class SliderControlWidget {
                 this.value = Math.min(127, this.value);
                 this.value = Math.max(0, this.value);
                 this.positionSlider(this.value);
-          
+
                 if ('ccNumber' in this) {
                     midiOut.sendControlChange(this.ccNumber, this.value);
                 } else {
@@ -618,7 +820,7 @@ class SliderControlWidget {
 
 class EnvelopeWidget {
     constructor(svgNode, options) {
-        console.log("making EnvWidget", options);
+        //.log("making EnvWidget", options);
         this.svgNode = svgNode;
         this.name = options.name;
         this.ccNumbers = options.ccNumbers;
@@ -626,11 +828,11 @@ class EnvelopeWidget {
 
         this.envPath = this.svgNode.querySelector(".envelopePath");
         let pathData = this.envPath.getPathData();
-        console.log(pathData);
-        console.log(this.envPath.getAttribute("d"));
+        //console.log(pathData);
+        //console.log(this.envPath.getAttribute("d"));
         this.axes = this.svgNode.querySelector(".pathAxes");
-        console.log(this.axes);
-        console.log(this.axes.height.animVal);
+        //console.log(this.axes);
+        //console.log(this.axes.height.animVal);
 
         //todo, should probably just erase, and start fresh on the
         //path data to be less fragile...
@@ -649,14 +851,14 @@ class EnvelopeWidget {
 
         pathData[1].values[1] = this.yTop; //attack hits the peak
 
-        console.log(pathData);
+        //.log(pathData);
         this.envPath.setPathData(pathData);
-        console.log(this.envPath.getAttribute("d"));
+        //console.log(this.envPath.getAttribute("d"));
 
         this.jack = this.svgNode.querySelector(".patchJack");
-        console.log(this.jack);
+        //console.log(this.jack);
         this.jack.style.fill = disabledJackColor;
-        console.log(this.jack);
+        //console.log(this.jack);
 
     }
 
@@ -722,4 +924,8 @@ class EnvelopeWidget {
         this.envPath.setPathData(pathData);
     }
 
+}
+
+function intToSysex(val) {
+    return [val & 0x7F, (val >> 7) & 0x7F];
 }
