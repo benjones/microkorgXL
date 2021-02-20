@@ -5,7 +5,6 @@ import 'path-data-polyfill'
 import SelectorControl from '../svgs/selectorControl.svg'
 import SliderControl from '../svgs/sliderControl.svg'
 import EnvelopeControl from '../svgs/envelope.svg'
-import Axes from '../svgs/axes.svg'
 
 const imageToUseMap = {
     "selectorControl.svg": SelectorControl,
@@ -81,7 +80,6 @@ const patchTargets = [
 ];
 
 
-
 window.onload = function () {
     console.log("document loaded");
     let ui = new uiHandle(document.getElementById("theSVG"));
@@ -152,9 +150,9 @@ class uiHandle {
         this.patches = [];
 
         this.controls = {
-            osc1Wave: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc1Waveform")),
+            osc1Wave: new SelectorControlWidget(this.svg,
                 {
+                    id: "#osc1Waveform",
                     name: "Osc 1 Waveform",
                     ccNumber: 8,
                     values: [
@@ -169,9 +167,9 @@ class uiHandle {
                     ]
 
                 }),
-            osc1Mod: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc1Mod")),
+            osc1Mod: new SelectorControlWidget(this.svg,
                 {
+                    id: "#osc1Mod",
                     name: "Osc 1 Mod",
                     ccNumber: 9,
                     values: [
@@ -194,21 +192,21 @@ class uiHandle {
                         }
                     }
                 }),
-            osc1Control1: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#osc1Control1")),
+            osc1Control1: new SliderControlWidget(this.svg,
                 {
+                    id: "#osc1Control1",
                     name: "Ctl 1",
                     ccNumber: 15,
                 }),
-            osc1Control2: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#osc1Control2")),
+            osc1Control2: new SliderControlWidget(this.svg,
                 {
+                    id: "#osc1Control2",
                     name: "Ctl 2",
                     ccNumber: 17,
                 }),
-            osc2Wave: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc2Waveform")),
+            osc2Wave: new SelectorControlWidget(this.svg,
                 {
+                    id: "#osc2Waveform",
                     name: "Osc 2 Waveform",
                     ccNumber: 18,
                     values: [
@@ -219,9 +217,9 @@ class uiHandle {
                     ]
 
                 }),
-            osc2Mod: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#osc2Mod")),
+            osc2Mod: new SelectorControlWidget(this.svg,
                 {
+                    id: "#osc2Mod",
                     name: "Osc 2 Mod",
                     ccNumber: 19,
                     values: [
@@ -243,69 +241,69 @@ class uiHandle {
                         }
                     }
                 }),
-            osc2Control1: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#osc2Control1")),
+            osc2Control1: new SliderControlWidget(this.svg,
                 {
+                    id: "#osc2Control1",
                     name: "Semi",
                     ccNumber: 20,
                 }),
-            osc2Control2: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#osc2Control2")),
+            osc2Control2: new SliderControlWidget(this.svg,
                 {
+                    id: "#osc2Control2",
                     name: "Tune",
                     ccNumber: 21,
                 }),
-            mixerOsc1: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#mixerOsc1")),
+            mixerOsc1: new SliderControlWidget(this.svg,
                 {
+                    id: "#mixerOsc1",
                     name: "Osc 1",
                     ccNumber: 23,
                 }),
-            mixerOsc2: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#mixerOsc2")),
+            mixerOsc2: new SliderControlWidget(this.svg,
                 {
+                    id: "#mixerOsc2",
                     name: "Osc 2",
                     ccNumber: 24,
                 }),
-            mixerNoise: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#mixerNoise")),
+            mixerNoise: new SliderControlWidget(this.svg,
                 {
+                    id: "#mixerNoise",
                     name: "Noise",
                     ccNumber: 25,
                 }),
-            mixerPunch: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#mixerPunch")),
+            mixerPunch: new SliderControlWidget(this.svg,
                 {
+                    id: "#mixerPunch",
                     name: "Punch",
                     sysexFunc: makeSysexFunc([0x57, 0])
                 }),
-            ampLevel: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#ampLevel")),
+            ampLevel: new SliderControlWidget(this.svg,
                 {
+                    id: "#ampLevel",
                     name: "Level",
                     ccNumber: 7
                 }),
-            filter1Cutoff: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1Cutoff")),
+            filter1Cutoff: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1Cutoff",
                     name: "Cutoff",
                     ccNumber: 74,
                 }),
-            filter1Resonance: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1Resonance")),
+            filter1Resonance: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1Resonance",
                     name: "Resonance",
                     ccNumber: 71,
                 }),
-            filter1Type: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1Type")),
+            filter1Type: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1Type",
                     name: "Type",
                     ccNumber: 27,
                 }),
-            filter1Routing: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#filter1Routing")),
+            filter1Routing: new SelectorControlWidget(this.svg,
                 {
+                    id: "#filter1Routing",
                     name: "Routing",
                     ccNumber: 26,
                     values: [
@@ -325,70 +323,77 @@ class uiHandle {
                         }
                     }
                 }),
-            filter1EnvIntensity: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1EnvIntensity")),
+            filter1EnvIntensity: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1EnvIntensity",
                     name: "Env Int",
                     ccNumber: 79,
                 }),
-            filter1KeyTrack: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1KeyTrack")),
+            filter1KeyTrack: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1KeyTrack",
                     name: "Key Track",
                     ccNumber: 28,
                 }),
-            filter1VelSen: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter1VelSens")),
+            filter1VelSen: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter1VelSens",
                     name: "Vel Sens",
                     sysexFunc: makeSysexFunc([0x36, 0], true)
                 }),
-            env1: new EnvelopeWidget(
-                imageToUse(this.svg.querySelector("#envelope1")),
+            env1: new EnvelopeWidget(this.svg,
+
                 {
+                    id: "#envelope1",
                     name: "Envelope 1",
                     ccNumbers: { attack: 85, decay: 86, sustain: 87, release: 88 }
                 }),
-            env2: new EnvelopeWidget(
-                imageToUse(this.svg.querySelector("#envelope2")),
+            env2: new EnvelopeWidget(this.svg,
                 {
+                    id: "#envelope2",
                     name: "Envelope 2",
                     ccNumbers: { attack: 73, decay: 75, sustain: 70, release: 72 }
                 }),
-
-            filter2Cutoff: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter2Cutoff")),
+            /*env3: new EnvelopeWidget(
+                imageToUse(this.svg.querySelector("#envelope3")),
                 {
+                    name: "Envelope 3",
+                    ccNumbers: { attack: 76, decay: 77, sustain: 70, release: 72 }
+                }),*/
+
+            filter2Cutoff: new SliderControlWidget(this.svg,
+                {
+                    id: "#filter2Cutoff",
                     name: "Cutoff",
                     ccNumber: 30,
                 }),
-            filter2Resonance: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter2Resonance")),
+            filter2Resonance: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter2Resonance",
                     name: "Resonance",
                     ccNumber: 68,
                 }),
-            filter2EnvIntensity: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter2EnvIntensity")),
+            filter2EnvIntensity: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter2EnvIntensity",
                     name: "Env Int",
                     ccNumber: 69,
                 }),
-            filter2KeyTrack: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter2KeyTrack")),
+            filter2KeyTrack: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter2KeyTrack",
                     name: "Key Track",
                     ccNumber: 82,
                 }),
-            filter2VelSen: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#filter2VelSens")),
+            filter2VelSen: new SliderControlWidget(this.svg,
                 {
+                    id: "#filter2VelSens",
                     name: "Vel Sens",
                     sysexFunc: makeSysexFunc([0x46, 0], true)
                 }),
-            filter2Type: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#filter2Type")),
+            filter2Type: new SelectorControlWidget(this.svg,
                 {
+                    id: "#filter2Type",
                     name: "Type",
                     ccNumber: 29,
                     values: [
@@ -398,9 +403,9 @@ class uiHandle {
                     ]
 
                 }),
-            lfo1Waveform: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo1Waveform")),
+            lfo1Waveform: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo1Waveform",
                     name: "Waveform",
                     ccNumber: 89,
                     values: [
@@ -412,9 +417,9 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo1KeySync: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo1KeySync")),
+            lfo1KeySync: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo1KeySync",
                     name: "Key Sync",
                     sysexFunc: makeSysexFunc([0x14, 1]),
                     values: [
@@ -424,9 +429,9 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo1BpmSync: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo1BpmSync")),
+            lfo1BpmSync: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo1BpmSync",
                     name: "BPM Sync",
                     sysexFunc: makeSysexFunc([0x13, 1]),
                     values: [
@@ -435,15 +440,15 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo1Frequency: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#lfo1Frequency")),
+            lfo1Frequency: new SliderControlWidget(this.svg,
                 {
+                    id: "#lfo1Frequency",
                     name: "Frequency",
                     ccNumber: 90,
                 }),
-            lfo2Waveform: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo2Waveform")),
+            lfo2Waveform: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo2Waveform",
                     name: "Waveform",
                     ccNumber: 102,
                     values: [
@@ -455,9 +460,9 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo2KeySync: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo2KeySync")),
+            lfo2KeySync: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo2KeySync",
                     name: "Key Sync",
                     sysexFunc: makeSysexFunc([0x24, 1]),
                     values: [
@@ -467,9 +472,9 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo2BpmSync: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#lfo2BpmSync")),
+            lfo2BpmSync: new SelectorControlWidget(this.svg,
                 {
+                    id: "#lfo2BpmSync",
                     name: "BPM Sync",
                     sysexFunc: makeSysexFunc([0x23, 1]),
                     values: [
@@ -478,35 +483,40 @@ class uiHandle {
                     ]
                 }
             ),
-            lfo2Frequency: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#lfo2Frequency")),
+            lfo2Frequency: new SliderControlWidget(this.svg,
                 {
+                    id: "#lfo2Frequency",
                     name: "Frequency",
                     ccNumber: 76,
                 }),
 
-            //patches
-            patch1Source: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#patch1Source")),
-                {
-                    name: "Source",
-                    sysexFunc: makeSysexFuncPatch([0, 0]),
-                    values: patchSourceOptions
-                }),
-            patch1Dest: new SelectorControlWidget(
-                imageToUse(this.svg.querySelector("#patch1Dest")),
-                {
-                    name: "Dest",
-                    sysexFunc: makeSysexFuncPatch([1, 0]),
-                    values: patchDestOptions
-                }),
-            patch1Intensity: new SliderControlWidget(
-                imageToUse(this.svg.querySelector("#patch1Intensity")),
-                {
-                    name: "Intensity",
-                    sysexFunc: makeSysexFuncPatch([2,0], true)
-                })
+        }
+        this.setupPatchControls(this.svg);
+    }
 
+    setupPatchControls(svg) {
+        for (let i = 0; i < 6; i++) {
+            const displayNumber = i + 1;
+            this.controls["patchSource" + displayNumber] = new SelectorControlWidget(svg,
+                {
+                    id: "#patch" + displayNumber + "Source",
+                    name: "Source",
+                    sysexFunc: makeSysexFuncPatch([i * 4, 0]),
+                    values: patchSourceOptions
+                });
+            this.controls["patchDest" + displayNumber] = new SelectorControlWidget(svg,
+                {
+                    id: "#patch" + displayNumber + "Dest",
+                    name: "Dest",
+                    sysexFunc: makeSysexFuncPatch([i * 4 + 1, 0]),
+                    values: patchDestOptions
+                });
+            this.controls["patchIntensity" + displayNumber] = new SliderControlWidget(svg,
+                {
+                    id: "#patch" + displayNumber + "Intensity",
+                    name: "Intensity",
+                    sysexFunc: makeSysexFuncPatch([i * 4 + 2, 0], true)
+                })
         }
     }
 
@@ -558,7 +568,7 @@ class uiHandle {
         console.log(programName);
         console.log(this.svg.querySelector("#patchName"));
         this.svg.querySelector("#patchName").textContent = programName;
-        for (let i = 50; i < 100; i++) {
+        for (let i = 90; i < 120; i++) {
             console.log(i, getByte(i));
         }
         /*
@@ -648,15 +658,23 @@ class uiHandle {
         this.controls.lfo2BpmSync.setFromSysex(getByte(88) >> 7);
 
         //patches
-        this.controls.patch1Source.setFromSysex(getByte(90));
-        this.controls.patch1Dest.setFromSysex(getByte(91));
-        this.controls.patch1Intensity.setFromSysex(getByte(92));
+        this.setPatchesFromSysex(Array.from(new Array(18), (x, i) => i + 90)
+            .map(x => getByte(x)));
 
 
         this.addPatch([this.controls.env1.jack, this.controls.filter1Cutoff.jack,
         this.controls.filter2Cutoff.jack], patchColors.filterCutoff);
         this.addPatch([this.controls.env2.jack, this.controls.ampLevel.jack
         ], patchColors.ampLevel);
+    }
+
+    setPatchesFromSysex(sysexVals) {
+        //first value is sysex value #90
+        for (let i = 0; i < 6; i++) {
+            this.controls["patchSource" + (i + 1)].setFromSysex(sysexVals[3 * i]);
+            this.controls["patchDest" + (i + 1)].setFromSysex(sysexVals[3 * i + 1]);
+            this.controls["patchIntensity" + (i + 1)].setFromSysex(sysexVals[3 * i + 2]);
+        }
     }
 
     addPatch(jacks, color) {
@@ -760,10 +778,10 @@ function imageToUse(imageNode) {
 
 class SelectorControlWidget {
 
-    constructor(svgNode, options) {
+    constructor(svg, options) {
         //console.log("constructing SCW");
         console.log(options);
-        this.svgNode = svgNode;
+        this.svgNode = imageToUse(svg.querySelector(options.id));
         this.name = options.name;
         if ('ccNumber' in options) {
             this.ccNumber = options.ccNumber;
@@ -820,9 +838,9 @@ class SelectorControlOption {
 }
 
 class SliderControlWidget {
-    constructor(svgNode, options) {
+    constructor(svg, options) {
         //console.log("making slider control widget", options);
-        this.svgNode = svgNode;
+        this.svgNode = imageToUse(svg.querySelector(options.id));
         this.name = options.name;
         if ('ccNumber' in options)
             this.ccNumber = options.ccNumber;
@@ -868,9 +886,9 @@ class SliderControlWidget {
 }
 
 class EnvelopeWidget {
-    constructor(svgNode, options) {
+    constructor(svg, options) {
         //.log("making EnvWidget", options);
-        this.svgNode = svgNode;
+        this.svgNode = imageToUse(svg.querySelector(options.id));
         this.name = options.name;
         this.ccNumbers = options.ccNumbers;
         this.svgNode.querySelector(".controlName").textContent = this.name;
@@ -997,7 +1015,7 @@ function makeSysexFunc(paramId, signed) {
 
 function makeSysexFuncPatch(paramId, signed) {
     return function (midiOut, val) {
-        if(signed){
+        if (signed) {
             val = Math.min(val, 126) - 63;
         }
         const sysexRep = intToSysex(val);
@@ -1013,3 +1031,4 @@ const patchSourceOptions = patchSources.map((val, index) => {
 const patchDestOptions = patchTargets.map((val, index) => {
     return new SelectorControlOption(val.name, index, index);
 });
+
