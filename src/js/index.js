@@ -20,6 +20,67 @@ const patchColors = {
     "ampLevel": "#0000ff",
 }
 
+const patchSources = [
+    { name: "EG1" },
+    { name: "EG2" },
+    { name: "EG3" },
+    { name: "LFO1" },
+    { name: "LFO2" },
+    { name: "Key Velocity" },
+    { name: "Pitch Wheel" },
+    { name: "Mod Wheel" },
+    { name: "Key Track" },
+    { name: "Midi 1" },
+    { name: "Midi 2" },
+    { name: "Midi 3" }
+];
+
+
+
+const patchTargets = [
+    { name: "Pitch" },
+    { name: "Osc2 Tune" },
+    { name: "Osc1 Control 1" },
+    { name: "Osc 1 Level" },
+    { name: "Osc 2 Level" },
+    { name: "Noise Level" },
+    { name: "Filter 1 Type" },
+    { name: "Filter 1 Cutoff" },
+    { name: "Filter 1 Resonance" },
+    { name: "Filter 2 Cutoff" },
+    { name: "Waveshape Depth" },
+    { name: "Amp Level" },
+    { name: "Panning" },
+    { name: "LFO1 Frequency" },
+    { name: "LFO2 Frequency" },
+    { name: "Portamento" },
+    { name: "Osc 1 Control 2" },
+    { name: "Filter 1 Env Intensity" },
+    { name: "Filter 1 Key Track" },
+    { name: "Filter 2 Resonance" },
+    { name: "Filter 2 Env Intensity" },
+    { name: "EG1 Attack" },
+    { name: "EG1 Decay" },
+    { name: "EG1 Sustain" },
+    { name: "EG1 Release" },
+    { name: "EG2 Attack" },
+    { name: "EG2 Decay" },
+    { name: "EG2 Sustain" },
+    { name: "EG2 Release" },
+    { name: "EG3 Attack" },
+    { name: "EG3 Decay" },
+    { name: "EG3 Sustain" },
+    { name: "EG3 Release" },
+    { name: "Patch 1 Intensity" },
+    { name: "Patch 2 Intensity" },
+    { name: "Patch 3 Intensity" },
+    { name: "Patch 4 Intensity" },
+    { name: "Patch 5 Intensity" },
+    { name: "Patch 6 Intensity" },
+
+];
+
+
 
 window.onload = function () {
     console.log("document loaded");
@@ -216,11 +277,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#mixerPunch")),
                 {
                     name: "Punch",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x57, 0, val, 0];
-                        midiOut.sendSysex(0x42, toSend);
-                    }
+                    sysexFunc: makeSysexFunc([0x57, 0])
                 }),
             ampLevel: new SliderControlWidget(
                 imageToUse(this.svg.querySelector("#ampLevel")),
@@ -284,14 +341,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#filter1VelSens")),
                 {
                     name: "Vel Sens",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(Math.min(val, 126) - 63);
-                        //console.log(sysexRep);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x36, 0, sysexRep[0], sysexRep[1]];
-                        //console.log(toSend);
-                        midiOut.sendSysex(0x42, toSend);
-                    }
+                    sysexFunc: makeSysexFunc([0x36, 0], true)
                 }),
             env1: new EnvelopeWidget(
                 imageToUse(this.svg.querySelector("#envelope1")),
@@ -334,12 +384,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#filter2VelSens")),
                 {
                     name: "Vel Sens",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(Math.min(val, 126) - 63);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x46, 0, sysexRep[0], sysexRep[1]];
-                        midiOut.sendSysex(0x42, toSend);
-                    }
+                    sysexFunc: makeSysexFunc([0x46, 0], true)
                 }),
             filter2Type: new SelectorControlWidget(
                 imageToUse(this.svg.querySelector("#filter2Type")),
@@ -371,12 +416,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#lfo1KeySync")),
                 {
                     name: "Key Sync",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(val);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x14, 1, sysexRep[0], sysexRep[1]];
-                        midiOut.sendSysex(0x42, toSend);
-                    },
+                    sysexFunc: makeSysexFunc([0x14, 1]),
                     values: [
                         new SelectorControlOption("Off", 0, 0),
                         new SelectorControlOption("Timbre", 1, 1),
@@ -388,12 +428,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#lfo1BpmSync")),
                 {
                     name: "BPM Sync",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(val);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x13, 1, sysexRep[0], sysexRep[1]];
-                        midiOut.sendSysex(0x42, toSend);
-                    },
+                    sysexFunc: makeSysexFunc([0x13, 1]),
                     values: [
                         new SelectorControlOption("Off", 0, 0),
                         new SelectorControlOption("On", 1, 1),
@@ -424,12 +459,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#lfo2KeySync")),
                 {
                     name: "Key Sync",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(val);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x24, 1, sysexRep[0], sysexRep[1]];
-                        midiOut.sendSysex(0x42, toSend);
-                    },
+                    sysexFunc: makeSysexFunc([0x24, 1]),
                     values: [
                         new SelectorControlOption("Off", 0, 0),
                         new SelectorControlOption("Timbre", 1, 1),
@@ -441,12 +471,7 @@ class uiHandle {
                 imageToUse(this.svg.querySelector("#lfo2BpmSync")),
                 {
                     name: "BPM Sync",
-                    sysexFunc: (midiOut, val) => {
-                        //global channel, modelID, change param, ??, val
-                        let sysexRep = intToSysex(val);
-                        let toSend = [0x30, 0x7e, 0x41, 0x11, 0, 0x23, 1, sysexRep[0], sysexRep[1]];
-                        midiOut.sendSysex(0x42, toSend);
-                    },
+                    sysexFunc: makeSysexFunc([0x23, 1]),
                     values: [
                         new SelectorControlOption("Off", 0, 0),
                         new SelectorControlOption("On", 1, 1),
@@ -460,9 +485,29 @@ class uiHandle {
                     ccNumber: 76,
                 }),
 
+            //patches
+            patch1Source: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#patch1Source")),
+                {
+                    name: "Source",
+                    sysexFunc: makeSysexFuncPatch([0, 0]),
+                    values: patchSourceOptions
+                }),
+            patch1Dest: new SelectorControlWidget(
+                imageToUse(this.svg.querySelector("#patch1Dest")),
+                {
+                    name: "Dest",
+                    sysexFunc: makeSysexFuncPatch([1, 0]),
+                    values: patchDestOptions
+                }),
+            patch1Intensity: new SliderControlWidget(
+                imageToUse(this.svg.querySelector("#patch1Intensity")),
+                {
+                    name: "Intensity",
+                    sysexFunc: makeSysexFuncPatch([2,0], true)
+                })
 
-        };
-
+        }
     }
 
     connectCallbacks(midiOut) {
@@ -520,19 +565,19 @@ class uiHandle {
         Analog tune: 124?  121
         Pitch bend: 125 or 126
         Portamento: 125 or 126
-
+ 
         Osc1: 32 - ? (waveform, mod1, mod2, oscmod?)
         byte 32 has wave type + extra info!  Low 3 bits is osc type!
         
         saw 0, pulse 1, triangle 2, sine 3, formant 4, noise 5, 
            PCM/DWGS 6, audio in 7
         byte 32 bits 4, 5 are OSC1 mod (waveform, cross, unison, VPM)
-
+ 
         Osc2:  36-39    (waveform , osc mod, tune, semitone)
         Mixer: 40-43 (osc1, osc2, noise)
         Mixer Punch: 62
         Pitch: 121-126 (analog tune, transpose, detune, vibrato intensity, pitch bend, portmento)
-
+ 
         */
         /*for (let i = 32; i < 45; i++) {
             console.log("byte: ", i, getByte(i));
@@ -602,6 +647,10 @@ class uiHandle {
         this.controls.lfo2KeySync.setFromSysex((getByte(88) >> 5) & 3);
         this.controls.lfo2BpmSync.setFromSysex(getByte(88) >> 7);
 
+        //patches
+        this.controls.patch1Source.setFromSysex(getByte(90));
+        this.controls.patch1Dest.setFromSysex(getByte(91));
+        this.controls.patch1Intensity.setFromSysex(getByte(92));
 
 
         this.addPatch([this.controls.env1.jack, this.controls.filter1Cutoff.jack,
@@ -705,7 +754,7 @@ function imageToUse(imageNode) {
     let parent = imageNode.parentNode;
     imageNode.remove();
     parent.appendChild(scElement);
-
+ 
     return scElement;*/
 }
 
@@ -713,7 +762,7 @@ class SelectorControlWidget {
 
     constructor(svgNode, options) {
         //console.log("constructing SCW");
-        //console.log(options);
+        console.log(options);
         this.svgNode = svgNode;
         this.name = options.name;
         if ('ccNumber' in options) {
@@ -929,3 +978,38 @@ class EnvelopeWidget {
 function intToSysex(val) {
     return [val & 0x7F, (val >> 7) & 0x7F];
 }
+
+function sendSysexControlChange(midiOut, paramId, val) {
+    const sysexRep = intToSysex(val);
+    midiOut.sendSysex(0x42,
+        [0x30, 0x7e, 0x41, 0x11, 0, paramId[0], paramId[1], sysexRep[0], sysexRep[1]]);
+}
+
+function makeSysexFunc(paramId, signed) {
+    console.log("making sysexFunc with ", paramId);
+    return function (midiOut, val) {
+        if (signed) {
+            val = Math.min(126, val) - 63;
+        }
+        sendSysexControlChange(midiOut, paramId, val);
+    }
+}
+
+function makeSysexFuncPatch(paramId, signed) {
+    return function (midiOut, val) {
+        if(signed){
+            val = Math.min(val, 126) - 63;
+        }
+        const sysexRep = intToSysex(val);
+        midiOut.sendSysex(0x42,
+            [0x30, 0x7e, 0x41, 0x12, 0, paramId[0], paramId[1], sysexRep[0], sysexRep[1]]);
+    }
+}
+
+const patchSourceOptions = patchSources.map((val, index) => {
+    return new SelectorControlOption(val.name, index, index);
+});
+
+const patchDestOptions = patchTargets.map((val, index) => {
+    return new SelectorControlOption(val.name, index, index);
+});
